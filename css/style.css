@@ -1,3 +1,19 @@
+*{
+    margin: 0%;
+}
 body{
-    background-image: url(../img/pexels-pixabay-159400@2x.jpg);
+    background-color: black;
+}
+.principal{
+    background-image: url(../img/pexels-pixabay-159400@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Kario {
+    width: 10vw;
 }
