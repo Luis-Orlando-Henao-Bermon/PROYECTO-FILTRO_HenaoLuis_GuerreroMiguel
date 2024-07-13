@@ -99,14 +99,14 @@ body{
     color: #303030;
 }
 .formulario input{
-    color: #707070; 
+    color: #757575; 
     font-size: 1.5rem;
     width: 100%;
     height: 3.12rem;
     display: flex;
     flex-direction: column;
     border-radius: 1.25rem;
-    border: 2px solid #707070  ;
+    border: 2px solid #757575  ;
 }
 #sub {
     width: 21rem;
@@ -119,4 +119,60 @@ body{
 }
 .finalLogin {
     font-family: myriadProLight;
+}
+/*icono de bienbenida*/
+.bienvenida{
+    background-color: white;
+    width: 58.5rem;
+    height: 34.3rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: bienvenidoB 6s;
+    opacity: 0;
+}
+.BienvenidoDN {
+    font-size: 2.5rem;
+    margin: rem 0;
+}
+.pedro {
+    width: 7.3rem;
+}
+.nombre {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.userAdmin {
+    font-size: 1.25rem;
+    font-family: myriadProLight;
+}
+.KarioB{
+    width: 10vw;
+    opacity: 0;
+    animation: karB 6s;
+}
+@keyframes bienvenidoB {
+    5%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+}
+@keyframes karB {
+    65%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
 }
