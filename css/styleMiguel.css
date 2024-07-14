@@ -2,7 +2,7 @@
     font-family: MyriadproR;
     src: url(../font/MYRIADPRO-REGULAR.OTF);
 }
-
+/* FUENTE */
 * {
     font-family: MyriadproR;
 }
@@ -19,185 +19,180 @@
     color: black;
 }
 
+/* icono */
 .añadir {
     position: relative;
     width: 20px;
     margin-left: 8%;
 }
-
+/* icono */
 .refrescar {
     position: relative;
     width: 20px;
     margin-left: 8%;
 }
-
+/* icono */
 .eliminar {
     position: relative;
     width: 20px;
     margin-left: 5%;
 }
-
+/* icono */
 .reportar {
     position: relative;
     width: 20px;
 }
-
+/* icono */
 .ayuda {
     position: relative;
     width: 20px;
     margin-left: 5%;
 }
-
+/* icono */
 .iconK {
     position: relative;
     width: 25px;
     margin-left: 10%;
     margin-right: 10%;
 }
-
+/* icono */
 .settings {
-    position: relative;
-    right: 18%;
-    width: 20px;
-}
-
-.notification {
-    position: relative;
-    width: 20px;
-    right: 16%;
-}
-
-.IconPerfil {
-    position: relative;
-    width: 30px;
-    left: 15%;
-}
-
-/* menu perfil (arreglar posisiones)
-div {
-    position: relative;
-    width: 20vw;
-    margin-left: 10%;
-    height: 22vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-.menu1 {
-    color: white;
-    padding: 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.Menu {
-    position: relative;
-    display: inline-block;
-}
-
-.menu2 {
-    margin-left: 10px;
-    display: none;
     position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 90%;
+    margin-top: -20px;
+    width: 20px;
+}
+/* icono */
+.notification {
+    position: absolute;
+    width: 20px;
+    margin-top: -20px;
+    margin-left: 92%;
+}
+/* icono */
+.IconPerfil {
+    position: absolute;
+    width: 30px;
+    margin-top: -30px;
+    margin-left: 94%;
+}
+/* menu del perfil */
+.menu1 {
+    position: absolute;
+    width: 30px;
+    margin-top: -0.4%;
+    margin-left: 0.5%;
     z-index: 1;
 }
 
-.menu2 a{
-    color: rgb(0, 0, 0);
-    padding: 20px 10px;
-    text-decoration: none;
-    display: block;
-    border: 1px solid rgb(187, 255, 0);
-    animation-name: menu2;
-}
-
-.menu2 p{
-    padding: 10px 10.1px;
-    text-decoration: none;
-    display: block;
-    border: 1px solid rgb(187, 255, 0);
-    animation-name: menu2;
-    margin-top: 0px;
-}
-
-.menu2 a:hover {
-    background-color: #ff000071
-}
-
-.menu2 p:hover {
-    background-color: #ff000071
-}
-
-.Menu:hover .menu2 {
-    display: block;
-}
-*/
-
 /* Titulo del panel */
 .titulo {
+    position: relative;
+    margin-left: 40%;
+    width: 300px;
     text-align: center;
 }
-
+/* Boton */
 .p1-1 {
     position: relative;
     margin-left: 30%;
 }
-
+/* panel 1 */
 .p2-1 {
     position: relative;
     margin-left: 5%;
 }
-
+/* panel 2 */
 .p2-2 {
     position: relative;
     margin-left: 18%;
     margin-top: -2.6%;
 }
-
+/* panel 3 */
 .p2-3 {
     position: relative;
     margin-top: -2.5%;
     margin-left: 30%;
 }
-
+/* panel 4 */
 .p2-4 {
     position: relative;
     margin-top: -2.6%;
     margin-left: 40%;
 }
-
+/* panel 5 */
 .p2-5 {
     position: relative;
     margin-top: -2.6%;
     margin-left: 50%;
 }
-
+/* panel 6 */
 .p2-6 {
     position: relative;
     margin-top: -2.6%;
     margin-left: 64%;
 }
-
+/* panel 7 */
 .p2-7 {
     position: relative;
     margin-top: -2.6%;
     margin-left: 72%;
 }
-
+/* panel 8 */
 .p2-8 {
     position: relative;
     margin-top: -2.6%;
     margin-left: 80%;
 }
-
+/* panel 9 */
 .p2-9 {
     position: relative;
     margin-top: -2.6%;
     margin-left: 90%;
 }
-
+/* IMAGEN AL FINAL DE LA LINEA DE DESCRIPCION */
+.Repeat{
+    position: absolute;
+    margin-left: 95%;
+    margin-top: -1.9%;
+    width: 20px;
+}
+/* IMAGEN 2 DE LA LINEA DE DESCRIPCION */
+.Repeat2{
+    position: absolute;
+    margin-left: 95%;
+    margin-top: -1.2%;
+    width: 20px;
+}
+/* IMAGEN 3 DE LA LINEA DE DESCRIPCION */
+.Repeat3{
+    position: absolute;
+    margin-left: 95%;
+    margin-top: -0.6%;
+    width: 20px;
+}
+/* IMAGEN 4 DE LA LINEA DE DESCRIPCION */
+.Repeat4{
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 0.2%;
+    width: 20px;
+}
+/* IMAGEN 5 DE LA LINEA DE DESCRIPCION */
+.Repeat5{
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 1%;
+    width: 20px;
+}
+/* IMAGEN 6 DE LA LINEA DE DESCRIPCION */
+.Repeat6{
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 1.6%;
+    width: 20px;
+}
+/* LINEA DESCRIPTIVA 1 */
 .Datos1 {
     position: relative;
     border: 2px solid gray;
@@ -206,49 +201,7 @@ div {
     border-radius: 12px;
     left: 50px;
 }
-
-.Repeat{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: -1.9%;
-    width: 20px;
-}
-
-.Repeat2{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: -1.2%;
-    width: 20px;
-}
-
-.Repeat3{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: -0.6%;
-    width: 20px;
-}
-
-.Repeat4{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: 0.2%;
-    width: 20px;
-}
-
-.Repeat5{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: 1%;
-    width: 20px;
-}
-
-.Repeat6{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: 1.6%;
-    width: 20px;
-}
-
+/* LINEA DESCRIPTIVA 2 */
 .Datos2 {
     position: relative;
     border: 2px solid gray;
@@ -258,7 +211,7 @@ div {
     left: 50px;
     top: 10px;
 }
-
+/* LINEA DESCRIPTIVA 3 */
 .Datos3 {
     position: relative;
     border: 2px solid gray;
@@ -268,7 +221,7 @@ div {
     left: 50px;
     top: 20px;
 }
-
+/* LINEA DESCRIPTIVA 4 */
 .Datos4 {
     position: relative;
     border: 2px solid gray;
@@ -278,7 +231,7 @@ div {
     left: 50px;
     top: 30px;
 }
-
+/* LINEA DESCRIPTIVA 5 */
 .Datos5 {
     position: relative;
     border: 2px solid gray;
@@ -288,7 +241,7 @@ div {
     left: 50px;
     top: 40px;
 }
-
+/* LINEA DESCRIPTIVA 6 */
 .Datos6 {
     position: relative;
     border: 2px solid gray;
@@ -298,109 +251,109 @@ div {
     left: 50px;
     top: 50px;
 }
-
+/* COLOR DE LOS DATOS EN LAS LINEAS DE DESCRIPCION */
 .Datos1 p {
     color: rgb(0, 0, 0);
 }
-
+/* CENTRAR ELEMENTOS EN EL INDICADOR */
 .Indicador {
     position: relative;
     margin-top: 5px;
     margin-left: 5px;
 }
-
+/* CENTRAR ELEMENTOS EN DESCRIPCION */
 .Descripción {
     position: relative;
     margin-top: -34px;
     margin-left: 180px;
 }
-
+/* CENTRAR ELEMENTOS EN CATEGORIA */
 .Categoría{
     position: relative;
     margin-top: -34px;
     margin-left: 380px;
 }
-
+/* CENTRAR ELEMENTOS EN FECHA DE INICIO */
 .FechaInicio{
     position: relative;
     margin-top: -34px;
     margin-left: 500px;
 }
-
+/* CENTRAR ELEMENTOS EN FECHA DE TERMINACION */
 .FechaTeminacion{
     position: relative;
     margin-top: -34px;
     margin-left: 660px;
 }
-
+/* CENTRAR ELEMENTOS EN FORMULA */
 .Formula{
     position: relative;
     margin-top: -40px;
     margin-left: 810px;
 }
-
+/* CENTRAR ELEMENTOS EN FRECUENCIA */
 .Frecuencia{
     position: relative;
     margin-top: -34px;
     margin-left: 940px;
 }
-/* Cumplimiento */
-
+/* CUMPLIMIENTO DE LINEA 1 */
+/* CENTRAR ELEMENTOS EN AREA */
 .Area{
     position: relative;
     margin-top: -35px;
     margin-left: 1140px;
 }
-
+/* INDICADOR DE LA LINEA DESCRIPTIVA 2 */
 .Indicador2 {
     position: relative;
     margin-top: 5px;
     margin-left: 5px;
 }
-
+/* DESCRIPCION DE LA LINEA DESCRIPTIVA 2 */
 .Descripción2 {
     position: relative;
     margin-top: -34px;
     margin-left: 180px;
 }
-
+/* CATEGORIA DE LA LINEA DESCRIPTIVA 2 */
 .Categoría2 {
     position: relative;
     margin-top: -34px;
     margin-left: 380px;
 }
-
+/* FECHA DE INICIO DE LA LINEA DESCRIPTIVA 2 */
 .FechaInicio2 {
     position: relative;
     margin-top: -34px;
     margin-left: 500px;
 }
-
+/* FECHA DE TERMINACION DE LA LINEA DESCRIPTIVA 2 */
 .FechaTeminacion2 {
     position: relative;
     margin-top: -34px;
     margin-left: 660px;
 }
-
+/* FORMULA DE LA LINEA DESCRIPTIVA 2 */
 .Formula2 {
     position: relative;
     margin-top: -40px;
     margin-left: 810px;
 }
-
+/* FRECUENCIA DE LA LINEA DESCRIPTIVA 2 */
 .Frecuencia2 {
     position: relative;
     margin-top: -34px;
     margin-left: 940px;
 }
-/* Cumplimiento */
-
+/* CUMPLIMIENTO DE LA LINEA 2 */
+/* AREA DE LA LINEA DESCRIPTIVA 2 */
 .Area2 {
     position: relative;
     margin-top: -35px;
     margin-left: 1140px;
 }
-
+/* BOTON ANTES DE INTERACCION */
 input{
     position: relative;
     background-color: orangered;
@@ -412,7 +365,7 @@ input{
     width: 210px;
     height: 40px;
 }
-
+/* BOTON DESPUES DE LA INTERACCION */
 input:hover{
     transition: 1.5s;
     border: 2px solid black;
