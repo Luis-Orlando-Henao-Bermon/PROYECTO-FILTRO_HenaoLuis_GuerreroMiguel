@@ -5,353 +5,108 @@
 /* FUENTE */
 * {
     font-family: MyriadproR;
+    color: black;
+    text-decoration: none;
 }
 
 /* header (funciones) */
 .linea {
     border-bottom: 2px solid gray;
-    width: 99vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
 }
 
 /* modificar el header */
-.linea a {
-    text-decoration: none;
-    color: black;
+.linea div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-/* icono */
-.añadir {
-    position: relative;
-    width: 20px;
-    margin-left: 8%;
+.linea a{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-/* icono */
-.refrescar {
-    position: relative;
-    width: 20px;
-    margin-left: 8%;
+.linea img{
+    width: 2.1rem;
 }
 /* icono */
-.eliminar {
-    position: relative;
-    width: 20px;
-    margin-left: 5%;
-}
-/* icono */
-.reportar {
-    position: relative;
+#settings {
     width: 20px;
 }
 /* icono */
-.ayuda {
-    position: relative;
-    width: 20px;
-    margin-left: 5%;
-}
-/* icono */
-.iconK {
-    position: relative;
-    width: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-/* icono */
-.settings {
-    position: absolute;
-    margin-left: 90%;
-    margin-top: -20px;
+#notification {
     width: 20px;
 }
 /* icono */
-.notification {
-    position: absolute;
-    width: 20px;
-    margin-top: -20px;
-    margin-left: 92%;
-}
-/* icono */
-.IconPerfil {
-    position: absolute;
-    width: 30px;
-    margin-top: -30px;
-    margin-left: 94%;
+#IconPerfil {   
+    width: 3.3rem;
 }
 /* menu del perfil */
 .menu1 {
-    position: absolute;
-    width: 30px;
-    margin-top: -0.4%;
-    margin-left: 0.5%;
-    z-index: 1;
+    width: 6rem;
+    gap: 1rem;
 }
 
 /* Titulo del panel */
 .titulo {
-    position: relative;
-    margin-left: 40%;
-    width: 300px;
+    margin:2rem auto;
     text-align: center;
+    font-size: 2.5rem;
 }
-/* Boton */
 .p1-1 {
-    position: relative;
-    margin-left: 30%;
+    text-align: center;
+    margin:1rem auto;
+    font-size: 1.5rem;
 }
-/* panel 1 */
-.p2-1 {
-    position: relative;
-    margin-left: 5%;
+
+/* Boton */
+.indicadores{
+    display: flex;
+    justify-content: space-evenly;
+    width: 96%;
 }
-/* panel 2 */
-.p2-2 {
-    position: relative;
-    margin-left: 18%;
-    margin-top: -2.6%;
+.indicadores p{
+    width: 11%;
+    text-align: center;
+    font-size: 1.5rem;
 }
-/* panel 3 */
-.p2-3 {
-    position: relative;
-    margin-top: -2.5%;
-    margin-left: 30%;
+ #p2-5{
+    width: 13%;
+} 
+#p2-2{
+    width: 12%;
+    padding-right: 1%;
 }
-/* panel 4 */
-.p2-4 {
-    position: relative;
-    margin-top: -2.6%;
-    margin-left: 40%;
-}
-/* panel 5 */
-.p2-5 {
-    position: relative;
-    margin-top: -2.6%;
-    margin-left: 50%;
-}
-/* panel 6 */
-.p2-6 {
-    position: relative;
-    margin-top: -2.6%;
-    margin-left: 64%;
-}
-/* panel 7 */
-.p2-7 {
-    position: relative;
-    margin-top: -2.6%;
-    margin-left: 72%;
-}
-/* panel 8 */
-.p2-8 {
-    position: relative;
-    margin-top: -2.6%;
-    margin-left: 80%;
-}
-/* panel 9 */
-.p2-9 {
-    position: relative;
-    margin-top: -2.6%;
-    margin-left: 90%;
-}
-/* IMAGEN AL FINAL DE LA LINEA DE DESCRIPCION */
-.Repeat{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: -1.9%;
-    width: 20px;
-}
-/* IMAGEN 2 DE LA LINEA DE DESCRIPCION */
-.Repeat2{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: -1.2%;
-    width: 20px;
-}
-/* IMAGEN 3 DE LA LINEA DE DESCRIPCION */
-.Repeat3{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: -0.6%;
-    width: 20px;
-}
-/* IMAGEN 4 DE LA LINEA DE DESCRIPCION */
-.Repeat4{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: 0.2%;
-    width: 20px;
-}
-/* IMAGEN 5 DE LA LINEA DE DESCRIPCION */
-.Repeat5{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: 1%;
-    width: 20px;
-}
-/* IMAGEN 6 DE LA LINEA DE DESCRIPCION */
-.Repeat6{
-    position: absolute;
-    margin-left: 95%;
-    margin-top: 1.6%;
-    width: 20px;
+#p2-6{
+    padding-right: 1%;
 }
 /* LINEA DESCRIPTIVA 1 */
 .Datos1 {
-    position: relative;
     border: 2px solid gray;
-    width: 92%;
-    height: 30px;
+    width: 96%;
+    height: 5rem;
     border-radius: 12px;
-    left: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0;
 }
-/* LINEA DESCRIPTIVA 2 */
-.Datos2 {
-    position: relative;
-    border: 2px solid gray;
-    width: 92%;
-    height: 30px;
-    border-radius: 12px;
-    left: 50px;
-    top: 10px;
+.Datos1 p{
+    width: 11%;
+    text-align: center;
+    font-size: 1.4rem;
 }
-/* LINEA DESCRIPTIVA 3 */
-.Datos3 {
-    position: relative;
-    border: 2px solid gray;
-    width: 92%;
-    height: 30px;
-    border-radius: 12px;
-    left: 50px;
-    top: 20px;
+#Indicador {
+    text-align: start;
+    justify-content: start;
 }
-/* LINEA DESCRIPTIVA 4 */
-.Datos4 {
-    position: relative;
-    border: 2px solid gray;
-    width: 92%;
-    height: 30px;
-    border-radius: 12px;
-    left: 50px;
-    top: 30px;
-}
-/* LINEA DESCRIPTIVA 5 */
-.Datos5 {
-    position: relative;
-    border: 2px solid gray;
-    width: 92%;
-    height: 30px;
-    border-radius: 12px;
-    left: 50px;
-    top: 40px;
-}
-/* LINEA DESCRIPTIVA 6 */
-.Datos6 {
-    position: relative;
-    border: 2px solid gray;
-    width: 92%;
-    height: 30px;
-    border-radius: 12px;
-    left: 50px;
-    top: 50px;
-}
-/* COLOR DE LOS DATOS EN LAS LINEAS DE DESCRIPCION */
-.Datos1 p {
-    color: rgb(0, 0, 0);
-}
-/* CENTRAR ELEMENTOS EN EL INDICADOR */
-.Indicador {
-    position: relative;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-/* CENTRAR ELEMENTOS EN DESCRIPCION */
-.Descripción {
-    position: relative;
-    margin-top: -34px;
-    margin-left: 180px;
-}
-/* CENTRAR ELEMENTOS EN CATEGORIA */
-.Categoría{
-    position: relative;
-    margin-top: -34px;
-    margin-left: 380px;
-}
-/* CENTRAR ELEMENTOS EN FECHA DE INICIO */
-.FechaInicio{
-    position: relative;
-    margin-top: -34px;
-    margin-left: 500px;
-}
-/* CENTRAR ELEMENTOS EN FECHA DE TERMINACION */
-.FechaTeminacion{
-    position: relative;
-    margin-top: -34px;
-    margin-left: 660px;
-}
-/* CENTRAR ELEMENTOS EN FORMULA */
-.Formula{
-    position: relative;
-    margin-top: -40px;
-    margin-left: 810px;
-}
-/* CENTRAR ELEMENTOS EN FRECUENCIA */
-.Frecuencia{
-    position: relative;
-    margin-top: -34px;
-    margin-left: 940px;
-}
-/* CUMPLIMIENTO DE LINEA 1 */
-/* CENTRAR ELEMENTOS EN AREA */
-.Area{
-    position: relative;
-    margin-top: -35px;
-    margin-left: 1140px;
-}
-/* INDICADOR DE LA LINEA DESCRIPTIVA 2 */
-.Indicador2 {
-    position: relative;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-/* DESCRIPCION DE LA LINEA DESCRIPTIVA 2 */
-.Descripción2 {
-    position: relative;
-    margin-top: -34px;
-    margin-left: 180px;
-}
-/* CATEGORIA DE LA LINEA DESCRIPTIVA 2 */
-.Categoría2 {
-    position: relative;
-    margin-top: -34px;
-    margin-left: 380px;
-}
-/* FECHA DE INICIO DE LA LINEA DESCRIPTIVA 2 */
-.FechaInicio2 {
-    position: relative;
-    margin-top: -34px;
-    margin-left: 500px;
-}
-/* FECHA DE TERMINACION DE LA LINEA DESCRIPTIVA 2 */
-.FechaTeminacion2 {
-    position: relative;
-    margin-top: -34px;
-    margin-left: 660px;
-}
-/* FORMULA DE LA LINEA DESCRIPTIVA 2 */
-.Formula2 {
-    position: relative;
-    margin-top: -40px;
-    margin-left: 810px;
-}
-/* FRECUENCIA DE LA LINEA DESCRIPTIVA 2 */
-.Frecuencia2 {
-    position: relative;
-    margin-top: -34px;
-    margin-left: 940px;
-}
-/* CUMPLIMIENTO DE LA LINEA 2 */
-/* AREA DE LA LINEA DESCRIPTIVA 2 */
-.Area2 {
-    position: relative;
-    margin-top: -35px;
-    margin-left: 1140px;
+#Descripción {
+    width: 12%;
+    text-align: start;
+    justify-content: start;
 }
 /* BOTON ANTES DE INTERACCION */
 input{
