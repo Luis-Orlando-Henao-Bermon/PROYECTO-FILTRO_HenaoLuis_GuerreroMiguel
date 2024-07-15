@@ -45,9 +45,12 @@
     width: 3.3rem;
 }
 /* menu del perfil */
-.menu1 {
+#menu1 {
     width: 6rem;
     gap: 1rem;
+}
+.menuNaranja{
+    display: none;
 }
 
 /* Titulo del panel */
@@ -75,7 +78,7 @@
     width: 11%;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 900;
 }
  #p2-5{
     width: 14%;
@@ -129,17 +132,20 @@
 }
 .paneles{
     display: flex;
+    align-items: center;
 }
 #menuP{
     width: 2rem;
     object-fit: contain;
 }
-#labelP{
+.labelP{
     width: 2rem;
+    height: 2rem;
     margin-left: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .porcentaje{
     width: 11%;
@@ -176,3 +182,87 @@ input{
     border-radius: 2rem;
     cursor: pointer;
 }
+@media only screen  and (max-width:1200px){
+    .indicadores p{
+        font-size: 1rem;
+    }
+    #Indicador{
+        width: 21%;
+    }
+    .Datos1 p{
+        font-size: 1rem;
+    }
+    .menuNaranja{
+        display: flex;
+    }
+    .titulo {
+        font-size: 2rem;
+    }
+    .p1-1 {
+        font-size: 1.2rem;
+    }
+}
+@media only screen  and (max-width:950px){
+    .linea div{
+        display: none;
+    }
+    .linea{
+        justify-content: space-between;
+    }
+    #menu1{
+        display: flex;
+    }
+    
+}
+@media only screen  and (max-width:800px){
+    #p2-7{
+        display: none;
+    }
+    #p2-8{
+        display: none;
+    }
+    .Frecuencia {
+        display: none;
+    }
+    .porcentaje {
+        display: none;
+    }
+}
+@media only screen  and (max-width:655px){
+    #p2-3{
+        display: none;
+    }
+    #p2-4{
+        display: none;
+    }
+    #p2-5{
+        display: none;
+    }
+    .FechaInicio {
+        display: none;
+    }
+    .FechaTeminacion {
+        display: none;
+    }
+    .Categoría {
+        display: none;
+    }
+}
+@media only screen  and (max-width:500px){
+    #p2-6{
+        display: none;
+    }
+    #p2-9{
+        display: none;
+    }
+    .Formula {
+        display: none;
+    }
+    .Area {
+        display: none;
+    }
+    #p2-2 {
+        width: 21%;
+    }
+}
+
