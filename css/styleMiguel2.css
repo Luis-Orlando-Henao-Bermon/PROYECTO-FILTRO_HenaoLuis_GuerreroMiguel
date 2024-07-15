@@ -1,0 +1,184 @@
+body {
+    background-image: url(../img/pexels-pixabay-159400@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: MyriadproR;
+    src: url(../font/MYRIADPRO-REGULAR.OTF);
+}
+
+/* FUENTE */
+* {
+    font-family: MyriadproR;
+    color: black;
+    text-decoration: none;
+}
+
+/* header (funciones) */
+.linea {
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: white;
+}
+
+/* modificar el header */
+.linea div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linea a {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.linea img {
+    width: 2.1rem;
+}
+
+/* icono */
+#settings {
+    width: 20px;
+}
+
+/* icono */
+#notification {
+    width: 20px;
+}
+
+/* icono */
+#IconPerfil {
+    width: 3.3rem;
+}
+
+/* menu del perfil */
+.menu1 {
+    width: 6rem;
+    gap: 1rem;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.add p {
+    font-size: 40px;
+}
+
+.add img {
+    text-align: center;
+    width: 50px;
+}
+
+.fondo-blanco {
+    display: flex;
+    width: 30rem;
+    height: 46rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    flex-direction: column;
+    text-align: center;
+    margin: auto auto;
+    border: 2px solid rgba(255, 114, 27, 1);
+}
+
+.fondo-blanco p {
+    font-size: 20px;
+}
+
+input {
+    margin-top: -6%;
+    margin-left: 20%;
+    width: 300px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 114, 27, 1);
+}
+
+button {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: auto auto;
+    background-color: rgba(255, 114, 27, 1);
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+.p1,
+.p2,
+.p3 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.button-2 {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: auto auto;
+    background-color: rgba(255, 114, 27, 1);
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.button-2:hover {
+    cursor: pointer;
+}
+
+.fondo-blanco2 {
+    display: flex;
+    width: 30rem;
+    height: 28rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    flex-direction: column;
+    text-align: center;
+    margin: auto auto;
+    border: 2px solid rgba(255, 114, 27, 1);
+    margin-top: 0;
+}
+
+.fondo-blanco2 p {
+    font-size: 20px;
+}
+
+.input2 {
+    color: rgba(255, 255, 255, 0);
+    background-color: white;
+}
+
+.input2:hover {
+    cursor: pointer;
+}
