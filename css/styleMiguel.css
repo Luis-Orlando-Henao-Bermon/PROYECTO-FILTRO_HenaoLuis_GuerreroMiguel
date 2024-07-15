@@ -55,6 +55,7 @@
     margin:2rem auto;
     text-align: center;
     font-size: 2.5rem;
+    font-weight: 600;
 }
 .p1-1 {
     text-align: center;
@@ -66,65 +67,112 @@
 .indicadores{
     display: flex;
     justify-content: space-evenly;
-    width: 96%;
+    width: 90%;
+    padding: 0 0.5rem;
+    padding-left: 2rem;
 }
 .indicadores p{
     width: 11%;
     text-align: center;
     font-size: 1.5rem;
+    font-weight: bold;
 }
  #p2-5{
-    width: 13%;
+    width: 14%;
 } 
 #p2-2{
-    width: 12%;
-    padding-right: 1%;
+    width: 14%;
+    text-align: start;
 }
 #p2-6{
     padding-right: 1%;
 }
+#p2-1{
+    text-align: start;
+    width: 14%;
+}
 /* LINEA DESCRIPTIVA 1 */
 .Datos1 {
     border: 2px solid gray;
-    width: 96%;
+    width: 92%;
     height: 5rem;
-    border-radius: 12px;
+    border-radius: 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 1rem 0;
+    padding: 0 0.5rem;
 }
 .Datos1 p{
     width: 11%;
     text-align: center;
     font-size: 1.4rem;
 }
+.Datos1 svg{
+    width: 100%;
+}
+.Datos1 circle{
+    fill: none;
+    stroke: red;
+    stroke-width: 10px;
+    stroke-dasharray: 88 100;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    border-radius: 5rem;
+}
+#circulo_green{
+    stroke: #10ec18;
+}
+#circulo_orange{
+    stroke: #ff9c04;
+}
+.paneles{
+    display: flex;
+}
+#menuP{
+    width: 2rem;
+    object-fit: contain;
+}
+#labelP{
+    width: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.porcentaje{
+    width: 11%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Datos1 span{
+    position: absolute;
+}
 #Indicador {
+    width: 14%;
     text-align: start;
     justify-content: start;
 }
 #Descripción {
-    width: 12%;
+    width: 14%;
     text-align: start;
     justify-content: start;
 }
 /* BOTON ANTES DE INTERACCION */
+.final{
+    display: flex;
+    justify-content: center;
+}
 input{
-    position: relative;
-    background-color: orangered;
+    background-color: #FF721B;
     color: white;
     border: none;
-    border-radius: 50px;
-    margin-left: 41.3%;
-    margin-top: 5%;
-    width: 210px;
-    height: 40px;
-}
-/* BOTON DESPUES DE LA INTERACCION */
-input:hover{
-    transition: 1.5s;
-    border: 2px solid black;
-    background-color: white;
-    color: black;
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
     cursor: pointer;
 }
