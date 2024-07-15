@@ -127,6 +127,20 @@
 #circulo_orange{
     stroke: #ff9c04;
 }
+.paneles{
+    display: flex;
+}
+#menuP{
+    width: 2rem;
+    object-fit: contain;
+}
+#labelP{
+    width: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .porcentaje{
     width: 11%;
     position: relative;
@@ -160,12 +174,5 @@ input{
     height: 4rem;
     font-size: 1.5rem;
     border-radius: 2rem;
-}
-/* BOTON DESPUES DE LA INTERACCION */
-input:hover{
-    transition: 1.5s;
-    border: 2px solid black;
-    background-color: white;
-    color: black;
     cursor: pointer;
 }
