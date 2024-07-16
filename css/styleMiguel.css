@@ -94,7 +94,7 @@ body{
     margin: 0%;
     animation: pagP 6s;
 }
-/* 
+
 @keyframes bienvenidoB {
     5%{
         opacity: 1;
@@ -137,7 +137,6 @@ body{
     }
     96.000000001%{
         overflow-y: scroll;
-        overflow-x: scroll;
     }
 }
 @keyframes paginaAtras {
@@ -150,7 +149,7 @@ body{
     96%{
         opacity: 0;
     }
-} */
+} 
 
 /* header (funciones) */
 .linea {
@@ -194,13 +193,13 @@ body{
 }
 .lineaMenu a{
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     width: 6rem;
 }
 .lineaMenu img{
-    width: 2.1rem;
+    width: 1.8rem;
     display: no;
 }
 #checkMenu{
@@ -377,6 +376,119 @@ button:hover{
     border: 2px solid rgb(192, 87, 2);
 }
 
+
+.panelMenu{
+    display: flex;
+    justify-content: center;
+    border: 2px solid gray;
+    margin: 0 1%;
+    width: 91.5%;
+    overflow: hidden;
+    display: none;
+}
+.panelesMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5%;
+    width: 80%;
+}
+.indicadoresMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 0.5rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.indicadoresMenu p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    height: 4rem;
+    border-bottom: #f2f2f2 2px solid;
+}
+#pM2-8{
+    height: 9.5rem;
+}
+.Datos1Menu {
+    width: 92%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+}
+.Datos1Menu p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 4rem;
+    border-bottom: #f2f2f2 2px solid;
+}
+.Datos1Menu div{
+    width: 100%;
+}
+.Datos1Menu svg{
+    border-bottom: #f2f2f2 2px solid;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Datos1Menu circle{
+    fill: none;
+    stroke: red;
+    stroke-width: 10px;
+    stroke-dasharray: 88 100;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    border-radius: 5rem;
+}
+.Datos1Menu span{
+    position: absolute;
+}
+.porcentajeM{
+    width: 11%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=radio]{
+    display: none;
+}
+#selecPanel1:checked + .panelMenu{
+    display: flex;
+}
+#selecPanel2:checked + .panelMenu{
+    display: flex;
+}
+#selecPanel3:checked + .panelMenu{
+    display: flex;
+}
+#selecPanel4:checked + .panelMenu{
+    display: flex;
+}
+#selecPanel5:checked + .panelMenu{
+    display: flex;
+}
+#selecPanel6:checked + .panelMenu{
+    display: flex;
+}
 @media only screen  and (max-width:1200px){
     .indicadores p{
         font-size: 1rem;
@@ -492,63 +604,4 @@ button:hover{
     #p2-2{
         width: 43%;
     }
-}
-
-.panelMenu{
-    display: flex;
-    justify-content: center;
-}
-.panelesMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0.5%;
-    width: 80%;
-}
-.indicadoresMenu {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: space-evenly;
-    padding: 0 0.5rem;
-    padding-left: 2rem;
-}
-.indicadoresMenu p{
-    width: 11%;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-.Datos1Menu {
-    border: 2px solid gray;
-    width: 92%;
-    height: 5rem;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 0 0.5rem;
-}
-.Datos1Menu p{
-    width: 11%;
-    text-align: center;
-    font-size: 1.4rem;
-}
-.Datos1Menu svg{
-    width: 100%;
-}
-.Datos1Menu circle{
-    fill: none;
-    stroke: red;
-    stroke-width: 10px;
-    stroke-dasharray: 88 100;
-    stroke-linecap: round;
-    transform: rotate(-90deg);
-    transform-origin: 50%;
-    border-radius: 5rem;
-}
-.Datos1Menu span{
-    position: absolute;
 }
