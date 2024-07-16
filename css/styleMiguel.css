@@ -172,16 +172,25 @@
     display: flex;
     justify-content: center;
 }
-input{
+button{
     background-color: #FF721B;
-    color: white;
     border: none;
     width: 20rem;
     height: 4rem;
     font-size: 1.5rem;
     border-radius: 2rem;
-    cursor: pointer;
 }
+
+.button3{
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid rgb(192, 87, 2);
+}
+
 @media only screen  and (max-width:1200px){
     .indicadores p{
         font-size: 1rem;
