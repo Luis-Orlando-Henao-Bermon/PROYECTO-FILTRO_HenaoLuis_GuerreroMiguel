@@ -2,11 +2,154 @@
     font-family: MyriadproR;
     src: url(../font/MYRIADPRO-REGULAR.OTF);
 }
+@font-face {
+    font-family: myriadProLight;
+    src: url(../font/MyriadPro-Light.otf);
+}
 /* FUENTE */
 * {
     font-family: MyriadproR;
     color: black;
     text-decoration: none;
+    margin: 0%;
+}
+body{
+    overflow-x: hidden;
+    animation: bod 6s;
+}
+.pagina{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 1080px;
+}
+.principal{
+    background-image: url(../img/pexels-pixabay-159400@2x.png);
+    background-color: black;
+    background-size:cover;
+    background-position-x: center;
+    animation: paginaAtras 6s;
+    opacity: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.KarioB{
+    width: 10vw;
+    opacity: 0;
+    animation: karB 6s;
+}
+.bienvenida{
+    background-color: white;
+    width: 65.5vw;
+    max-width: 58.5rem;
+    height: 34.3rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: bienvenidoB 6s;  
+    opacity: 0;
+}
+.KarioL {
+    width: 6.3rem;
+}
+.BienvenidoDN {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: rem 0;
+}
+.pedro {
+    width: 7.3rem;
+}
+.nombre {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.userAdmin {
+    font-size: 1.25rem;
+    font-family: myriadProLight;
+}
+.KarioB{
+    width: 10vw;
+    opacity: 0;
+    animation: karB 6s;
+}
+.pagPrincipal {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    background-color: white;
+    border: none;
+    margin: 0%;
+    animation: pagP 6s;
+}
+
+@keyframes bienvenidoB {
+    5%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+}
+@keyframes karB {
+    65%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+}
+@keyframes pagP {
+    0%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+    }
+    96%{
+        opacity: 1;
+    }
+}
+@keyframes bod {
+    0%{
+        overflow-y: hidden;
+    }
+    96%{
+        overflow-y: hidden;
+    }
+    96.000000001%{
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+}
+@keyframes paginaAtras {
+    0%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+    96%{
+        opacity: 0;
+    }
 }
 
 /* header (funciones) */
@@ -48,6 +191,10 @@
 #menu1 {
     width: 6rem;
     gap: 1rem;
+    display: flex;
+    justify-content: end;
+    width: 17%;
+    margin-right: 1%;
 }
 .menuNaranja{
     display: none;
@@ -133,6 +280,7 @@
 .paneles{
     display: flex;
     align-items: center;
+    margin: 0 5%;
 }
 #menuP{
     width: 2rem;
@@ -181,6 +329,7 @@ input{
     font-size: 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
+    margin: 2rem;
 }
 @media only screen  and (max-width:1200px){
     .indicadores p{
@@ -247,6 +396,21 @@ input{
     .Categoría {
         display: none;
     }
+    .KarioL {
+        width: 4rem;
+    }
+    .BienvenidoDN{
+        font-size: 1.8rem;
+    }
+    .nombre{
+        font-size: 1.3rem;
+    }
+    .userAdmin {
+        font-size: 1rem;
+    }
+    .bienvenida{
+        height: 27rem;
+    }
 }
 @media only screen  and (max-width:500px){
     #p2-6{
@@ -263,6 +427,18 @@ input{
     }
     #p2-2 {
         width: 21%;
+    }
+    .indicadores{
+        justify-content: space-around;
+    }
+    .pedro{
+        width: 3rem;
+    }
+    #Indicador {
+        width: 44%;
+    }
+    #Descripción{
+        width: 43%;
     }
 }
 
