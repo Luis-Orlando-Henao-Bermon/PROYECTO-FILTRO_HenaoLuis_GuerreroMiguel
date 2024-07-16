@@ -94,7 +94,7 @@ body{
     margin: 0%;
     animation: pagP 6s;
 }
-
+/* 
 @keyframes bienvenidoB {
     5%{
         opacity: 1;
@@ -150,7 +150,7 @@ body{
     96%{
         opacity: 0;
     }
-}
+} */
 
 /* header (funciones) */
 .linea {
@@ -173,7 +173,41 @@ body{
     font-weight: bold;
 }
 .linea img{
+    width: 1.8rem;
+}
+.lineaMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    background-color: #f2f2f2;
+    padding: 0 2rem;
+    margin-top: -3px;
+    display: none;
+}
+.lineaMenu div {
+    display: flex;
+    width: 9rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.lineaMenu a{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 6rem;
+}
+.lineaMenu img{
     width: 2.1rem;
+    display: no;
+}
+#checkMenu{
+    display: none;
+}
+#checkMenu:checked ~ .lineaMenu{
+    display: flex;
 }
 /* icono */
 #settings {
@@ -189,11 +223,10 @@ body{
 }
 /* menu del perfil */
 #menu1 {
-    width: 6rem;
     gap: 1rem;
     display: flex;
     justify-content: end;
-    width: 17%;
+    width: 12%;
     margin-right: 1%;
 }
 .menuNaranja{
@@ -227,7 +260,7 @@ body{
     font-size: 1.5rem;
     font-weight: 900;
 }
- #p2-5{
+#p2-5{
     width: 14%;
 } 
 #p2-2{
@@ -271,6 +304,9 @@ body{
     transform-origin: 50%;
     border-radius: 5rem;
 }
+.Datos1 span{
+    position: absolute;
+}
 #circulo_green{
     stroke: #10ec18;
 }
@@ -280,7 +316,7 @@ body{
 .paneles{
     display: flex;
     align-items: center;
-    margin: 0 5%;
+    margin: 0 0.5%;
 }
 #menuP{
     width: 2rem;
@@ -301,9 +337,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.Datos1 span{
-    position: absolute;
 }
 #Indicador {
     width: 14%;
@@ -354,9 +387,6 @@ button:hover{
     .Datos1 p{
         font-size: 1rem;
     }
-    .menuNaranja{
-        display: flex;
-    }
     .titulo {
         font-size: 2rem;
     }
@@ -365,6 +395,9 @@ button:hover{
     }
 }
 @media only screen  and (max-width:950px){
+    .menuNaranja{
+        display: flex;
+    }
     .linea div{
         display: none;
     }
@@ -453,5 +486,69 @@ button:hover{
     #Descripción{
         width: 43%;
     }
+    #p2-1{
+        width: 44%;
+    }
+    #p2-2{
+        width: 43%;
+    }
 }
 
+.panelMenu{
+    display: flex;
+    justify-content: center;
+}
+.panelesMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5%;
+    width: 80%;
+}
+.indicadoresMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 0 0.5rem;
+    padding-left: 2rem;
+}
+.indicadoresMenu p{
+    width: 11%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.Datos1Menu {
+    border: 2px solid gray;
+    width: 92%;
+    height: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+}
+.Datos1Menu p{
+    width: 11%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.Datos1Menu svg{
+    width: 100%;
+}
+.Datos1Menu circle{
+    fill: none;
+    stroke: red;
+    stroke-width: 10px;
+    stroke-dasharray: 88 100;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    border-radius: 5rem;
+}
+.Datos1Menu span{
+    position: absolute;
+}
