@@ -328,7 +328,10 @@ button{
     font-size: 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
-    margin: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button3{
