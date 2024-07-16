@@ -157,6 +157,10 @@ button {
     cursor: pointer;
 }
 
+.button-3{
+    color: white;
+}
+
 .fondo-blanco2 {
     display: flex;
     width: 30rem;
@@ -174,11 +178,12 @@ button {
     font-size: 20px;
 }
 
-.input2 {
-    color: rgba(255, 255, 255, 0);
-    background-color: white;
+button:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid rgb(192, 87, 2);
 }
 
-.input2:hover {
-    cursor: pointer;
+.button4{
+    color: white;
 }

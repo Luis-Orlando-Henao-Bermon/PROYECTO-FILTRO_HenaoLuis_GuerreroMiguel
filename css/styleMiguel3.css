@@ -3,6 +3,10 @@
     src: url(../font/MYRIADPRO-REGULAR.OTF);
 }
 
+body{
+    margin: 0;
+}
+
 /* FUENTE */
 * {
     font-family: MyriadproR;
@@ -72,67 +76,58 @@
 }
 
 .add img {
-    text-align: center;
-    width: 50px;
+    width: 40px;
 }
 
 .crear{
-    margin-left: 10rem;
+    width: 46rem;
+    font-size: 25px;
 }
 
 .crear h3{
     color: rgba(255, 114, 27, 1);
-    margin-left: 7rem;
-}
-
-.crear p{
-    margin-left: -56rem;
-    text-align: center;
 }
 
 .reportar2{
-    position: absolute;
-    margin-left: 30rem;
-    margin-top: -2rem;
+    width: 49rem;
+    font-size: 25px;
 }
 
 .reportar2 h3{
-    margin-left: 30%;
     color: rgba(255, 114, 27, 1);
-}
-
-.reportar2 p{
-    text-align: center;
 }
 
 .eliminar2{
-    position: absolute;
-    margin-top: -7.4rem;
-    margin-left: 56rem;
+    width: 46rem;
+    font-size: 25px;
 }
 
 .eliminar2 h3{
-    margin-left: 30%;
+    
     color: rgba(255, 114, 27, 1);
 }
 
-.eliminar2 p{
-    text-align: center;
-}
-
 .contact{
-    position: relative;
     background-color: rgba(255, 114, 27, 1);
-    text-align: center;
-    margin-top: 13rem;
+    width: 100vw;
+    
 }
 
 .contact h3,
 .p-2{
-    text-decoration: double;
+    text-align: center;
+    font-size: 24px;
     color: white;
 }
 
 .contenedor{
-    margin-top: -3rem;
+    text-align: center;
+    justify-content:space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact{
+    overflow: hidden;
+    margin-top: 4.32rem;
 }

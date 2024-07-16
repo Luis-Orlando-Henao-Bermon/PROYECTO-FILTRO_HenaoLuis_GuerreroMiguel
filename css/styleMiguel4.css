@@ -77,51 +77,74 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0.1rem;
-    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .add p {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .add img {
-    text-align: center;
-    width: 50px;
+    width: 25px;
 }
 
 .fondo-blanco4{
     background-color: white;
     border: 2px solid rgba(255, 114, 27, 1);
     border-radius: 25px;
-    width: 20rem;
-    height: 20rem;
+    width: 33rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    margin-left: 33rem;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+input{
+    display: flex;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 114, 27, 1);
+    border-radius: 50px;
+    width: 20rem;
+    height: 3rem;
+}
+
+
+
+.contenedor2{
+    margin: 0 auto;
+    justify-content: center;
+}
+
+option,
+select{
+    width: 20rem;
+    height: 3rem;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 114, 27, 1);
 }
 
 button{
+    margin: auto;
+    margin-top: 2.4rem;
     border: none;
     border-radius: 50px;
-    margin-top: 3rem;
-    width: 100px;
-    height: 30px;
+    width: 15rem;
+    height: 4rem;
     background-color: rgba(255, 114, 27, 1);
 }
 
 button a{
+    text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 26px;
 }
 
-input{
-    margin-top: 0.2rem;
-    border: 1px solid rgba(255, 114, 27, 1);
-    border-radius: 50px;
-    width: 200px;
-}
-
-.contenedor2{
-    position: relative;
-    top: 3rem;
+button:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid rgb(192, 87, 2);
 }
