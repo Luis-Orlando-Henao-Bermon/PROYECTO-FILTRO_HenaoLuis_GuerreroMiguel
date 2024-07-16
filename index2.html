@@ -1,28 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kario Media PM</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleMiguel.css">
 </head>
+
 <body>
-    <div class="principal">
-        <img src="img/kario sin kairo@2x.png" class="Kario">
-        <div class="login">
-            <img src="img/kario.svg" class="KarioL">
-            <p class="bienvenido">Bienvenido al panel digital de KARIO Media</p>
-            <p class="ingresa">Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
-            <form action="index.html" class="formulario">
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" id="contraseña">
-                <input type="submit" id="sub" value="Ingresar al panel">
-            </form>
-            <p class="finalLogin">Tienes problemas para ingresar? Por favor contactarse con asistencia técnica lo más pronto posible</p>
+    <div class="pagina">
+
+        <div class="principal">
+            <img src="img/kario sin kairo@2x.png" class="KarioB">
+            <div class="bienvenida">
+                <img src="img/kario.svg" class="KarioL">
+                <p class="BienvenidoDN">Bienvenido de nuevo</p>
+                <img src="img/pp@2x.png" class="pedro">
+                <p class="nombre">Pedro Felipe Gómez Bonilla</p>
+                <p class="userAdmin">Usuario Administrador</p>
+            </div>
+        </div>
+        <div class="pagPrincipal">
+            <!-- MENU PRINCIPAL -->
+            <div class="linea">
+                <label for="checkMenu">
+                    <img src="img/menuNaranja.png" class="menuNaranja">
+                </label>
+                <div>
+                    <img src="img/Group 3@2x.png" class="añadir">
+                    <a href="añadir.html" class="p1">Añadir</a>
+                </div>
+                <div>
+                    <img src="img\Icon open-reload@2x.png" class="refrescar">
+                    <a href="index2.html" class="p2">Refrescar</a>
+                </div>
+                <div>
+                    <img src="img\Icon material-delete-forever@2x.png" class="eliminar">
+                    <a href="eliminar.html" class="p3">Eliminar</a>
+                </div>
+                <img src="img/kario sin kairo@2x.png" class="iconK">
+                <div>
+                    <img src="img\Icon material-bug-report@2x.png" class="reportar">
+                    <a href="reportar.html" class="p4">Reportar</a>
+                </div>
+                <div>
+                    <img src="img\Icon ionic-ios-help-circle@2x.png" class="ayuda">
+                    <a href="ayudar.html" class="p5">Ayuda</a>
+                </div>
+                <div id="menu1">
+                    <img src="img/Icon ionic-ios-settings@2x.png" id="settings">
+                    <img src="img/Icon material-notifications-active@2x.png" id="notification">
+                    <label for="">
+                        <img src="img/pp@2x.png" id="IconPerfil">
+                    </label>
+                </div>
+            </div>
+            <input type="checkbox" id="checkMenu">
+            <div class="lineaMenu">
+                <div>
+                    <img src="img/Group 3@2x.png" class="añadir">
+                    <a href="añadir.html" class="p1">Añadir</a>
+                </div>
+                <div>
+                    <img src="img\Icon open-reload@2x.png" class="refrescar">
+                    <a href="index2.html" class="p2">Refrescar</a>
+                </div>
+                <div>
+                    <img src="img\Icon material-delete-forever@2x.png" class="eliminar">
+                    <a href="eliminar.html" class="p3">Eliminar</a>
+                </div>
+                <div>
+                    <img src="img\Icon material-bug-report@2x.png" class="reportar">
+                    <a href="reportar.html" class="p4">Reportar</a>
+                </div>
+                <div>
+                    <img src="img\Icon ionic-ios-help-circle@2x.png" class="ayuda">
+                    <a href="ayudar.html" class="p5">Ayuda</a>
+                </div>
+            </div>
+            
+            <!-- TITULO -->
+    
+            <p class="titulo">Panel de Indicadores</p>
+            <p class="p1-1">Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
+            
+            <!-- FUNCIONES -->
+    
+            <div class="indicadores">
+                <p id="p2-1">Indicador</p>
+                <p id="p2-2">Descripción</p>
+                <p id="p2-3">Categoría</p>
+                <p id="p2-4">Fecha de Inicio</p>
+                <p id="p2-5">Fecha de Terminación</p>
+                <p id="p2-6">Fórmula</p>
+                <p id="p2-7">Frecuencia</p>
+                <p id="p2-8">Cumplimiento</p>
+                <p id="p2-9">Área</p>
+            </div>
+            <!-- DESCRIPCION DE LOS DATOS EN LA PRIMERA LINEA -->
+            <div class="paneles">
+                <div class="Datos1">
+                    <p id="Indicador">Modelado 3D</p>
+                    <p id="Descripción">Interés por diseño........</p>
+                    <p class="Categoría">Baja</p>
+                    <p class="FechaInicio">12/05/21</p>
+                    <p class="FechaTeminacion">12/12/21</p>
+                    <p class="Formula">Met.Ágil</p>
+                    <p class="Frecuencia">1/4</p>
+                    <div class="porcentaje">
+                        <svg>
+                            <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                        </svg>
+                        <span>31%</span>
+                    </div>
+                    <p class="Area">Marketing</p>
+                </div>
+                <label for="" class="labelP">
+                    <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                </label>
+
+            </div>
+            <div class="panelMenu">
+                <div class="indicadoresMenu">
+                    <p id="p2-1">Indicador</p>
+                    <p id="p2-2">Descripción</p>
+                    <p id="p2-3">Categoría</p>
+                    <p id="p2-4">Fecha de Inicio</p>
+                    <p id="p2-5">Fecha de Terminación</p>
+                    <p id="p2-6">Fórmula</p>
+                    <p id="p2-7">Frecuencia</p>
+                    <p id="p2-8">Cumplimiento</p>
+                    <p id="p2-9">Área</p>
+                </div>
+                <div class="panelesMenu">
+                    <div class="Datos1Menu">
+                        <p id="Indicador">Modelado 3D</p>
+                        <p id="Descripción">Interés por diseño........</p>
+                        <p class="Categoría">Baja</p>
+                        <p class="FechaInicio">12/05/21</p>
+                        <p class="FechaTeminacion">12/12/21</p>
+                        <p class="Formula">Met.Ágil</p>
+                        <p class="Frecuencia">1/4</p>
+                        <div class="porcentaje">
+                            <svg>
+                                <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                            </svg>
+                            <span>31%</span>
+                        </div>
+                        <p class="Area">Marketing</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- DESCRIPCION DE LOS DATOS EN LA SEGUNDA LINEA -->
+            <div class="paneles">
+                <div class="Datos1">
+                    <p id="Indicador">Finca Galeón</p>
+                    <p id="Descripción">Diseño de maque.........</p>
+                    <p class="Categoría">Baja</p>
+                    <p class="FechaInicio">12/04/21</p>
+                    <p class="FechaTeminacion">12/05/21</p>
+                    <p class="Formula">Met.Ágil</p>
+                    <p class="Frecuencia">1/4</p>
+                    <div class="porcentaje">
+                        <svg>
+                            <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                        </svg>
+                        <span>25%</span>
+                    </div>
+                    <p class="Area">Diseño</p>
+                </div>
+                <label for="" class="labelP">
+                    <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                </label>
+
+            </div>
+            <div class="panelMenu">
+                <div class="indicadoresMenu">
+                    <p id="p2-1">Indicador</p>
+                    <p id="p2-2">Descripción</p>
+                    <p id="p2-3">Categoría</p>
+                    <p id="p2-4">Fecha de Inicio</p>
+                    <p id="p2-5">Fecha de Terminación</p>
+                    <p id="p2-6">Fórmula</p>
+                    <p id="p2-7">Frecuencia</p>
+                    <p id="p2-8">Cumplimiento</p>
+                    <p id="p2-9">Área</p>
+                </div>
+                <div class="panelesMenu">
+                    <div class="Datos1Menu">
+                        <p id="Indicador">Modelado 3D</p>
+                        <p id="Descripción">Interés por diseño........</p>
+                        <p class="Categoría">Baja</p>
+                        <p class="FechaInicio">12/05/21</p>
+                        <p class="FechaTeminacion">12/12/21</p>
+                        <p class="Formula">Met.Ágil</p>
+                        <p class="Frecuencia">1/4</p>
+                        <div class="porcentaje">
+                            <svg>
+                                <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                            </svg>
+                            <span>31%</span>
+                        </div>
+                        <p class="Area">Marketing</p>
+                    </div>
+                    <label for="" class="labelP">
+                        <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                    </label>
+                </div>
+            </div>
+            <!-- DESCRIPCION DE LOS DATOS EN LA TERCERA LINEA -->
+            <div class="paneles">
+                <div class="Datos1">
+                    <p id="Indicador">Colegios Privados</p>
+                    <p id="Descripción">Se busca llegar a los....</p>
+                    <p class="Categoría">Media</p>
+                    <p class="FechaInicio">24/04/21</p>
+                    <p class="FechaTeminacion">12/05/21</p>
+                    <p class="Formula">Met.Fibo</p>
+                    <p class="Frecuencia">1/4</p>
+                    <div class="porcentaje">
+                        <svg >
+                            <circle r="30" cx="50%" cy="50%" pathlength="100" id="circulo_green"></circle>
+                        </svg>
+                        <span>80%</span>
+                    </div>
+                    <p class="Area">Developers</p>
+                </div>
+                <label for="" class="labelP">
+                    <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                </label>
+
+            </div>
+            <div class="panelMenu">
+                <div class="indicadoresMenu">
+                    <p id="p2-1">Indicador</p>
+                    <p id="p2-2">Descripción</p>
+                    <p id="p2-3">Categoría</p>
+                    <p id="p2-4">Fecha de Inicio</p>
+                    <p id="p2-5">Fecha de Terminación</p>
+                    <p id="p2-6">Fórmula</p>
+                    <p id="p2-7">Frecuencia</p>
+                    <p id="p2-8">Cumplimiento</p>
+                    <p id="p2-9">Área</p>
+                </div>
+                <div class="panelesMenu">
+                    <div class="Datos1Menu">
+                        <p id="Indicador">Modelado 3D</p>
+                        <p id="Descripción">Interés por diseño........</p>
+                        <p class="Categoría">Baja</p>
+                        <p class="FechaInicio">12/05/21</p>
+                        <p class="FechaTeminacion">12/12/21</p>
+                        <p class="Formula">Met.Ágil</p>
+                        <p class="Frecuencia">1/4</p>
+                        <div class="porcentaje">
+                            <svg>
+                                <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                            </svg>
+                            <span>31%</span>
+                        </div>
+                        <p class="Area">Marketing</p>
+                    </div>
+                    <label for="" class="labelP">
+                        <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                    </label>
+                </div>
+            </div>
+            <!-- DESCRIPCION DE LOS DATOS EN LA CUARTA LINEA -->
+            <div class="paneles">
+                <div class="Datos1">
+                    <p id="Indicador">Electrodomésticos</p>
+                    <p id="Descripción">Ventas de electro..........</p>
+                    <p class="Categoría">Media</p>
+                    <p class="FechaInicio">12/04/21</p>
+                    <p class="FechaTeminacion">12/09/21</p>
+                    <p class="Formula">N/A</p>
+                    <p class="Frecuencia">1/3</p>
+                    <div class="porcentaje">
+                        <svg>
+                            <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                        </svg>
+                        <span>32%</span>
+                    </div>
+                    <p class="Area">Gerencia</p>
+                </div>
+                <label for="" class="labelP">
+                    <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                </label>
+
+            </div>
+            <div class="panelMenu">
+                <div class="indicadoresMenu">
+                    <p id="p2-1">Indicador</p>
+                    <p id="p2-2">Descripción</p>
+                    <p id="p2-3">Categoría</p>
+                    <p id="p2-4">Fecha de Inicio</p>
+                    <p id="p2-5">Fecha de Terminación</p>
+                    <p id="p2-6">Fórmula</p>
+                    <p id="p2-7">Frecuencia</p>
+                    <p id="p2-8">Cumplimiento</p>
+                    <p id="p2-9">Área</p>
+                </div>
+                <div class="panelesMenu">
+                    <div class="Datos1Menu">
+                        <p id="Indicador">Modelado 3D</p>
+                        <p id="Descripción">Interés por diseño........</p>
+                        <p class="Categoría">Baja</p>
+                        <p class="FechaInicio">12/05/21</p>
+                        <p class="FechaTeminacion">12/12/21</p>
+                        <p class="Formula">Met.Ágil</p>
+                        <p class="Frecuencia">1/4</p>
+                        <div class="porcentaje">
+                            <svg>
+                                <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                            </svg>
+                            <span>31%</span>
+                        </div>
+                        <p class="Area">Marketing</p>
+                    </div>
+                    <label for="" class="labelP">
+                        <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                    </label>
+                </div>
+            </div>
+            <!-- DESCRIPCION DE LOS DATOS EN LA QUINTA LINEA -->
+            <div class="paneles">
+                <div class="Datos1">
+                    <p id="Indicador">Estrato 2 - Floridablanca</p>
+                    <p id="Descripción">Impactos en los sec.....</p>
+                    <p class="Categoría">Alta</p>
+                    <p class="FechaInicio">12/04/21</p>
+                    <p class="FechaTeminacion">12/09/21</p>
+                    <p class="Formula">Met.Expo</p>
+                    <p class="Frecuencia">1/4</p>
+                    <div class="porcentaje">
+                        <svg >
+                            <circle r="30" cx="50%" cy="50%" pathlength="100" id="circulo_green"></circle>
+                        </svg>
+                        <span>95%</span>
+                    </div>
+                    <p class="Area">Marketing</p>
+                </div>
+                <label for="" class="labelP">
+                    <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                </label>
+
+            </div>
+            <div class="panelMenu">
+                <div class="indicadoresMenu">
+                    <p id="p2-1">Indicador</p>
+                    <p id="p2-2">Descripción</p>
+                    <p id="p2-3">Categoría</p>
+                    <p id="p2-4">Fecha de Inicio</p>
+                    <p id="p2-5">Fecha de Terminación</p>
+                    <p id="p2-6">Fórmula</p>
+                    <p id="p2-7">Frecuencia</p>
+                    <p id="p2-8">Cumplimiento</p>
+                    <p id="p2-9">Área</p>
+                </div>
+                <div class="panelesMenu">
+                    <div class="Datos1Menu">
+                        <p id="Indicador">Modelado 3D</p>
+                        <p id="Descripción">Interés por diseño........</p>
+                        <p class="Categoría">Baja</p>
+                        <p class="FechaInicio">12/05/21</p>
+                        <p class="FechaTeminacion">12/12/21</p>
+                        <p class="Formula">Met.Ágil</p>
+                        <p class="Frecuencia">1/4</p>
+                        <div class="porcentaje">
+                            <svg>
+                                <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                            </svg>
+                            <span>31%</span>
+                        </div>
+                        <p class="Area">Marketing</p>
+                    </div>
+                    <label for="" class="labelP">
+                        <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                    </label>
+                </div>
+            </div>
+            <!-- DESCRIPCION DE LOS DATOS EN LA SEXTA LINEA -->
+            <div class="paneles">
+                <div class="Datos1">
+                    <p id="Indicador">Jóvenes en Acción</p>
+                    <p id="Descripción">Impacto en los sec.......</p>
+                    <p class="Categoría">Alta</p>
+                    <p class="FechaInicio">15/02/21</p>
+                    <p class="FechaTeminacion">09/11/21</p>
+                    <p class="Formula">Met.Expo</p>
+                    <p class="Frecuencia">1/2</p>
+                    <div class="porcentaje">
+                        <svg>
+                            <circle r="30" cx="50%" cy="50%" pathlength="100" id="circulo_orange"></circle>
+                        </svg>
+                        <span>75%</span>
+                    </div>
+                    <p class="Area">producción</p>
+                </div>
+                <label for="" class="labelP">
+                    <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                </label>
+
+            </div>
+            <div class="panelMenu">
+                <div class="indicadoresMenu">
+                    <p id="p2-1">Indicador</p>
+                    <p id="p2-2">Descripción</p>
+                    <p id="p2-3">Categoría</p>
+                    <p id="p2-4">Fecha de Inicio</p>
+                    <p id="p2-5">Fecha de Terminación</p>
+                    <p id="p2-6">Fórmula</p>
+                    <p id="p2-7">Frecuencia</p>
+                    <p id="p2-8">Cumplimiento</p>
+                    <p id="p2-9">Área</p>
+                </div>
+                <div class="panelesMenu">
+                    <div class="Datos1Menu">
+                        <p id="Indicador">Modelado 3D</p>
+                        <p id="Descripción">Interés por diseño........</p>
+                        <p class="Categoría">Baja</p>
+                        <p class="FechaInicio">12/05/21</p>
+                        <p class="FechaTeminacion">12/12/21</p>
+                        <p class="Formula">Met.Ágil</p>
+                        <p class="Frecuencia">1/4</p>
+                        <div class="porcentaje">
+                            <svg>
+                                <circle r="30" cx="50%" cy="50%" pathlength="100"></circle>
+                            </svg>
+                            <span>31%</span>
+                        </div>
+                        <p class="Area">Marketing</p>
+                    </div>
+                    <label for="" class="labelP">
+                        <img src="img/Repeat Grid 4@2x.png" id="menuP">
+                    </label>
+                </div>
+            </div>
+            <!-- BOTON DEL MENU -->
+            <div class="final">
+                <input type="button" value="Añadir Elementos">
+            </div>
         </div>
     </div>
-    
 </body>
+
 </html>
