@@ -1,0 +1,127 @@
+body {
+    background-image: url(../img/pexels-pixabay-159400@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: MyriadproR;
+    src: url(../font/MYRIADPRO-REGULAR.OTF);
+}
+
+/* FUENTE */
+* {
+    font-family: MyriadproR;
+    color: black;
+    text-decoration: none;
+}
+
+/* header (funciones) */
+.linea {
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: white;
+}
+
+/* modificar el header */
+.linea div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linea a {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.linea img {
+    width: 2.1rem;
+}
+
+/* icono */
+#settings {
+    width: 20px;
+}
+
+/* icono */
+#notification {
+    width: 20px;
+}
+
+/* icono */
+#IconPerfil {
+    width: 3.3rem;
+}
+
+/* menu del perfil */
+.menu1 {
+    width: 6rem;
+    gap: 1rem;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.add p {
+    font-size: 40px;
+}
+
+.add img {
+    text-align: center;
+    width: 50px;
+}
+
+.fondo-blanco4{
+    background-color: white;
+    border: 2px solid rgba(255, 114, 27, 1);
+    border-radius: 25px;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    margin-left: 33rem;
+}
+
+button{
+    border: none;
+    border-radius: 50px;
+    margin-top: 3rem;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 114, 27, 1);
+}
+
+button a{
+    color: white;
+    font-size: 20px;
+}
+
+input{
+    margin-top: 0.2rem;
+    border: 1px solid rgba(255, 114, 27, 1);
+    border-radius: 50px;
+    width: 200px;
+}
+
+.contenedor2{
+    position: relative;
+    top: 3rem;
+}

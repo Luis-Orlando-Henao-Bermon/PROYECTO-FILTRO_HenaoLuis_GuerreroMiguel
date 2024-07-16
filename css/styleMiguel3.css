@@ -1,0 +1,138 @@
+@font-face {
+    font-family: MyriadproR;
+    src: url(../font/MYRIADPRO-REGULAR.OTF);
+}
+
+/* FUENTE */
+* {
+    font-family: MyriadproR;
+    color: black;
+    text-decoration: none;
+}
+
+/* header (funciones) */
+.linea {
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: white;
+}
+
+/* modificar el header */
+.linea div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linea a {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.linea img {
+    width: 2.1rem;
+}
+
+/* icono */
+#settings {
+    width: 20px;
+}
+
+/* icono */
+#notification {
+    width: 20px;
+}
+
+/* icono */
+#IconPerfil {
+    width: 3.3rem;
+}
+
+/* menu del perfil */
+.menu1 {
+    width: 6rem;
+    gap: 1rem;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.add p {
+    font-size: 40px;
+}
+
+.add img {
+    text-align: center;
+    width: 50px;
+}
+
+.crear{
+    margin-left: 10rem;
+}
+
+.crear h3{
+    color: rgba(255, 114, 27, 1);
+    margin-left: 7rem;
+}
+
+.crear p{
+    margin-left: -56rem;
+    text-align: center;
+}
+
+.reportar2{
+    position: absolute;
+    margin-left: 30rem;
+    margin-top: -2rem;
+}
+
+.reportar2 h3{
+    margin-left: 30%;
+    color: rgba(255, 114, 27, 1);
+}
+
+.reportar2 p{
+    text-align: center;
+}
+
+.eliminar2{
+    position: absolute;
+    margin-top: -7.4rem;
+    margin-left: 56rem;
+}
+
+.eliminar2 h3{
+    margin-left: 30%;
+    color: rgba(255, 114, 27, 1);
+}
+
+.eliminar2 p{
+    text-align: center;
+}
+
+.contact{
+    position: relative;
+    background-color: rgba(255, 114, 27, 1);
+    text-align: center;
+    margin-top: 13rem;
+}
+
+.contact h3,
+.p-2{
+    text-decoration: double;
+    color: white;
+}
+
+.contenedor{
+    margin-top: -3rem;
+}
