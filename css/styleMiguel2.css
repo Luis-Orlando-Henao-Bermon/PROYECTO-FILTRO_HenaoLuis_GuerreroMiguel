@@ -193,3 +193,16 @@ button:hover{
 .button4{
     color: white;
 }
+
+.menuNaranja{
+    display: none;
+}
+
+@media only screen and(min-width: 800px) {
+    .add{
+        display: flex;
+        justify-content: center;
+        border: 2px solid blue;
+        background-color: aqua;
+    }
+}
