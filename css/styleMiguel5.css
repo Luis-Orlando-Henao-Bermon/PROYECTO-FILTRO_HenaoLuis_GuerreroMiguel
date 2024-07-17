@@ -2,9 +2,6 @@ body {
     background-image: url(../img/pexels-pixabay-159400@2x.png);
     background-size:cover;
     background-position-x: center;
-    width: 100vw;
-    max-width: 1920px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -55,6 +52,9 @@ body {
     padding: 0 2rem;
     display: none;
 }
+.menuHov:hover{
+    border: 1px solid orange;
+}
 .lineaMenu div {
     display: flex;
     width: 9rem;
@@ -83,27 +83,30 @@ body {
     width: 93%;
     display: flex;
     align-items: end;
-    text-align: center;
     display: none;
 }
-
 .nombrePerfil {
     width: 10rem;
     font-size: 1.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #f2f2f2;
-    text-align: end;
+    border-bottom: 1px solid #969595ad;
+    text-align: center;
 }
 .miPerfil {
     margin-bottom: 0.5rem;
     cursor: pointer;
+}
+.miPerfil:hover{
+    transition: 0.2s;
+    color: blue;
 }
 .cerrarSecion {
     cursor: pointer;
     transition: 0.2s;
 }
 .cerrarSecion:hover{
+    transition: 0.2s;
     color: red;
 }
 
@@ -111,10 +114,11 @@ body {
     display: flex;
 }
 .posicionMenuPerfil{
-    text-align: end;
+    text-align: center;
     background-color: #f2f2f2;
     padding-bottom: 0.5rem;
     border-radius: 1rem;
+    border: 1px solid orange;
 }
 input[type=checkbox]{
     display: none;
@@ -149,21 +153,15 @@ input[type=checkbox]{
     font-size: 2.5rem;
     font-weight: 600;
 }
-.p1-1 {
-    text-align: center;
-    margin:1rem auto;
-    font-size: 1.5rem;
-}
 
 .add {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .add img {
-    width: 45px;
+    width: 35px;
 }
 
 .fondo-blanco {
@@ -193,7 +191,6 @@ input {
 .input2{
     border: none;
     border: 2px solid rgba(255, 114, 27, 1);
-    
 }
 
 button {
@@ -201,51 +198,12 @@ button {
     width: 150px;
     height: 40px;
     justify-content: center;
-    text-align: center;
     margin: auto auto;
     background-color: rgba(255, 114, 27, 1);
     border: none;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 50px;
-}
-
-
-.button-2 {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    justify-content: center;
-    text-align: center;
-    margin: auto auto;
-    background-color: rgba(255, 114, 27, 1);
-    border: none;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    border-radius: 50px;
-    margin-top: 30px;
-}
-
-.button-3:hover {
-    cursor: pointer;
-}
-
-.button-3{
-    color: white;
-    text-decoration: none;
-}
-
-.fondo-blanco2 {
-    display: flex;
-    width: 30rem;
-    height: 28rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    flex-direction: column;
-    text-align: center;
-    margin: auto auto;
-    border: 2px solid rgba(255, 114, 27, 1);
 }
 
 button:hover{
