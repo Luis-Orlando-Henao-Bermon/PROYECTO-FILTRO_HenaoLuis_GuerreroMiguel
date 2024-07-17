@@ -1,11 +1,10 @@
 body {
     background-image: url(../img/pexels-pixabay-159400@2x.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:cover;
+    background-position-x: center;
     width: 100vw;
     max-width: 1920px;
     height: 100vh;
-    max-height: 1080px;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -17,11 +16,8 @@ body {
     src: url(../font/MYRIADPRO-REGULAR.OTF);
 }
 
-/* FUENTE */
-* {
+*{
     font-family: MyriadproR;
-    color: black;
-    text-decoration: none;
 }
 
 /* header (funciones) */
@@ -31,8 +27,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 4rem;
-    width: 100%;
-    background-color: white;
 }
 
 /* modificar el header */
@@ -41,53 +35,102 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
-.linea a {
+.linea a{
+    color: black;
+    text-decoration: none;
     margin: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
-
-.linea img {
-    width: 2.1rem;
+.linea img{
+    width: 1.8rem;
+}
+.lineaMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    background-color: #f2f2f2;
+    padding: 0 2rem;
+    margin-top: -3px;
+    display: none;
+    gap: 0.2rem;
+}
+.lineaMenu div {
+    display: flex;
+    width: 9rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.lineaMenu a{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 6rem;
+    text-decoration: none;
+    color: black;
+}
+.lineaMenu img{
+    width: 1.8rem;
+}
+.MENUhov:hover{
+    border: 1px solid rgb(255, 136, 0);
 }
 
+#checkMenu{
+    display: none;
+}
+#checkMenu:checked ~ .lineaMenu{
+    display: flex;
+}
 /* icono */
 #settings {
     width: 20px;
 }
-
 /* icono */
 #notification {
     width: 20px;
 }
-
 /* icono */
-#IconPerfil {
+#IconPerfil {   
     width: 3.3rem;
 }
-
 /* menu del perfil */
-.menu1 {
-    width: 6rem;
+#menu1 {
     gap: 1rem;
+    display: flex;
+    justify-content: end;
+    width: 12%;
+    margin-right: 1%;
+}
+.menuNaranja{
+    display: none;
+}
+
+/* Titulo del panel */
+.titulo {
+    margin:2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.p1-1 {
+    text-align: center;
+    margin:1rem auto;
+    font-size: 1.5rem;
 }
 
 .add {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
-.add p {
-    font-size: 40px;
+    
 }
 
 .add img {
-    text-align: center;
-    width: 50px;
+    width: 45px;
 }
 
 .fondo-blanco {
@@ -107,8 +150,7 @@ body {
 }
 
 input {
-    margin: auto;
-    margin-top: -6%;
+    margin: 0 auto;
     width: 300px;
     height: 30px;
     border-radius: 25px;
@@ -135,14 +177,6 @@ button {
     border-radius: 50px;
 }
 
-.p1,
-.p2,
-.p3 {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-}
 
 .button-2 {
     display: flex;
@@ -154,17 +188,19 @@ button {
     background-color: rgba(255, 114, 27, 1);
     border: none;
     color: white;
+    text-decoration: none;
     font-size: 30px;
     border-radius: 50px;
     margin-top: 30px;
 }
 
-.button-2:hover {
+.button-3:hover {
     cursor: pointer;
 }
 
 .button-3{
     color: white;
+    text-decoration: none;
 }
 
 .fondo-blanco2 {
@@ -177,11 +213,6 @@ button {
     text-align: center;
     margin: auto auto;
     border: 2px solid rgba(255, 114, 27, 1);
-    margin-top: 0;
-}
-
-.fondo-blanco2 p {
-    font-size: 20px;
 }
 
 button:hover{
@@ -198,11 +229,89 @@ button:hover{
     display: none;
 }
 
-@media only screen and(min-width: 800px) {
-    .add{
+@media only screen and (max-width: 800px) {
+    .titulo{
         display: flex;
         justify-content: center;
-        border: 2px solid blue;
-        background-color: aqua;
+        width: 20%;
+    }
+    .add{
+        width: 100vw;
+    }
+    .fondo-blanco2{
+        width: 60vw;
+    }
+    .input2, input{
+        width: 50%;
+    }
+    .linea{
+        width: 100vw;
+    }
+    .button-2{
+        width: 20%;
+        height: 6%;
+        font-size: 1.2rem;
+    }
+    .p1,
+    .añadir,
+    .p2,
+    .refrescar,
+    .p3,
+    .eliminar,
+    .p4,
+    .reportar,
+    .p5,
+    .ayuda{
+        display: none;
+    }
+    .iconK{
+        justify-items: auto;
+    }
+    .menuNaranja{
+        display: block;
+    }
+}
+@media only screen and (max-width: 700px){
+    .button-2{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .add{
+        justify-content: center;
+        height: 5rem;
+    }.add img{
+        width: 35px;
+    }
+    .fondo-blanco2{
+        width: 14rem;
+        height: 21rem;
+    }
+    .iconK{
+        justify-items: auto;
+
+    }
+    .input2, input{
+        width: 11rem;
+        height: 1.5rem;
+        justify-content: center;
+    }
+    .titulo{
+        width: 7rem;
+        font-size: 30px;
+    }
+    .button-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        font-size: 1rem;
+        width: 6rem;
+        height: 1.5rem;
+    }
+    .p1-1,
+    .p2-1,
+    .p3-1{
+        font-size: 1rem;
     }
 }
