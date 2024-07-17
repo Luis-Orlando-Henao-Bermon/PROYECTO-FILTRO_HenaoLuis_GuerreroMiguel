@@ -1,11 +1,11 @@
 body {
     background-image: url(../img/pexels-pixabay-159400@2x.png);
+    background-size:cover;
+    background-position-x: center;
     background-repeat: no-repeat;
-    background-size: 100%;
     width: 100vw;
     max-width: 1920px;
     height: 100vh;
-    max-height: 1080px;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -26,13 +26,12 @@ body {
 
 /* header (funciones) */
 .linea {
-    border-bottom: 2px solid gray;
+    background-color: white;
+    border-bottom: 2px solid #f2f2f2;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 4rem;
-    width: 100%;
-    background-color: white;
 }
 
 /* modificar el header */
@@ -41,36 +40,112 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
-.linea a {
+.linea a{
     margin: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
-
-.linea img {
-    width: 2.1rem;
+.linea img{
+    width: 1.8rem;
+}
+.lineaMenu {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: #f2f2f2;
+    padding: 0 2rem;
+    margin-top: 4rem;
+    display: none;
+}
+.lineaMenu div {
+    display: flex;
+    width: 9rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.lineaMenu a{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 6rem;
+}
+.lineaMenu img{
+    width: 1.8rem;
+    display: no;
+}
+#checkMenu{
+    display: none;
+}
+#checkMenu:checked ~ .lineaMenu{
+    display: flex;
+}
+.menuPerfil {
+    position: absolute;
+    flex-direction: column;
+    width: 93%;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    display: none;
+    margin-top: 4rem;
 }
 
+.nombrePerfil {
+    width: 10rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f2f2f2;
+    text-align: end;
+}
+.miPerfil {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.cerrarSecion {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cerrarSecion:hover{
+    color: red;
+}
+
+#checkPerfil:checked + .menuPerfil{
+    display: flex;
+}
+.posicionMenuPerfil{
+    text-align: end;
+    background-color: #f2f2f2;
+    padding-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+input[type=checkbox]{
+    display: none;
+}
 /* icono */
 #settings {
     width: 20px;
 }
-
 /* icono */
 #notification {
     width: 20px;
 }
-
 /* icono */
-#IconPerfil {
+#IconPerfil {   
     width: 3.3rem;
 }
-
 /* menu del perfil */
-.menu1 {
-    width: 6rem;
+#menu1 {
     gap: 1rem;
+    display: flex;
+    justify-content: end;
+    width: 12%;
+    margin-right: 1%;
+}
+.menuNaranja{
+    display: none;
 }
 
 .add {
@@ -118,7 +193,6 @@ input{
     justify-content: center;
 }
 
-option,
 select{
     width: 20rem;
     height: 3rem;
@@ -126,7 +200,6 @@ select{
     border-radius: 50px;
     border: 2px solid rgba(255, 114, 27, 1);
 }
-
 button{
     margin: auto;
     margin-top: 2.4rem;
@@ -147,4 +220,51 @@ button:hover{
     cursor: pointer;
     transition: 0.2s;
     border: 2px solid rgb(192, 87, 2);
+}
+@media only screen  and (max-width:1500px){
+    .menuPerfil{
+        width: 94%;
+    }
+}
+@media only screen  and (max-width:1250px){
+    .menuPerfil{
+        width: 95%;
+    }
+}
+@media only screen  and (max-width:950px){
+    .menuNaranja{
+        display: flex;
+    }
+    .linea div{
+        display: none;
+    }
+    .linea{
+        justify-content: space-between;
+    }
+    .menuPerfil{
+        width: 100%;
+    }
+}
+
+@media only screen  and (max-width:570px){
+    .fondo-blanco4{
+        width: 95vw;
+    }
+}
+@media only screen  and (max-width:440px){
+    .fondo-blanco4{
+        height: 25rem;
+    }
+    .contenedor2 p{
+        font-size: 1.2rem;
+    }
+    select, input{
+        font-size: 1rem;
+        height: 2rem;
+        width: 100%;
+    }
+    button{
+        height: 3rem;
+        margin-top: 0.4rem;
+    }
 }

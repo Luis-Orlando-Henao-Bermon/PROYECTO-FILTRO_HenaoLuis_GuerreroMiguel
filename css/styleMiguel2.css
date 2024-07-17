@@ -18,11 +18,14 @@ body {
 
 *{
     font-family: MyriadproR;
+    color: black;
+    text-decoration: none;
 }
 
 /* header (funciones) */
 .linea {
-    border-bottom: 2px solid gray;
+    background-color: white;
+    border-bottom: 2px solid #f2f2f2;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -36,8 +39,6 @@ body {
     justify-content: space-between;
 }
 .linea a{
-    color: black;
-    text-decoration: none;
     margin: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -46,16 +47,13 @@ body {
     width: 1.8rem;
 }
 .lineaMenu {
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    position: fixed;
+    position: absolute;
     background-color: #f2f2f2;
     padding: 0 2rem;
-    margin-top: -3px;
     display: none;
-    gap: 0.2rem;
 }
 .lineaMenu div {
     display: flex;
@@ -69,21 +67,57 @@ body {
     font-weight: bold;
     text-align: center;
     width: 6rem;
-    text-decoration: none;
-    color: black;
 }
 .lineaMenu img{
     width: 1.8rem;
 }
-.MENUhov:hover{
-    border: 1px solid rgb(255, 136, 0);
-}
-
 #checkMenu{
     display: none;
 }
 #checkMenu:checked ~ .lineaMenu{
     display: flex;
+}
+.menuPerfil {
+    position: absolute;
+    flex-direction: column;
+    width: 93%;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    display: none;
+}
+
+.nombrePerfil {
+    width: 10rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f2f2f2;
+    text-align: end;
+}
+.miPerfil {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.cerrarSecion {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cerrarSecion:hover{
+    color: red;
+}
+
+#checkPerfil:checked + .menuPerfil{
+    display: flex;
+}
+.posicionMenuPerfil{
+    text-align: end;
+    background-color: #f2f2f2;
+    padding-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+input[type=checkbox]{
+    display: none;
 }
 /* icono */
 #settings {
@@ -108,7 +142,6 @@ body {
 .menuNaranja{
     display: none;
 }
-
 /* Titulo del panel */
 .titulo {
     margin:2rem;
@@ -228,7 +261,30 @@ button:hover{
 .menuNaranja{
     display: none;
 }
-
+@media only screen  and (max-width:1500px){
+    .menuPerfil{
+        width: 94%;
+    }
+}
+@media only screen  and (max-width:1250px){
+    .menuPerfil{
+        width: 95%;
+    }
+}
+@media only screen  and (max-width:950px){
+    .menuNaranja{
+        display: flex;
+    }
+    .linea div{
+        display: none;
+    }
+    .linea{
+        justify-content: space-between;
+    }
+    .menuPerfil{
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 800px) {
     .titulo{
         display: flex;
@@ -252,23 +308,8 @@ button:hover{
         height: 6%;
         font-size: 1.2rem;
     }
-    .p1,
-    .añadir,
-    .p2,
-    .refrescar,
-    .p3,
-    .eliminar,
-    .p4,
-    .reportar,
-    .p5,
-    .ayuda{
-        display: none;
-    }
     .iconK{
         justify-items: auto;
-    }
-    .menuNaranja{
-        display: block;
     }
 }
 @media only screen and (max-width: 700px){

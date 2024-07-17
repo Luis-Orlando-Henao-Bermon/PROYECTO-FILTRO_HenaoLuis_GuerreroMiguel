@@ -11,17 +11,20 @@
 <body>
     <!-- MENU PRINCIPAL -->
     <div class="linea">
+        <label for="checkMenu">
+            <img src="img/menuNaranja.png" class="menuNaranja">
+        </label>
         <div>
             <img src="img/Group 3@2x.png" class="añadir">
             <a href="añadir.html" class="p1">Añadir</a>
         </div>
         <div>
             <img src="img\Icon open-reload@2x.png" class="refrescar">
-            <a href="eliminar.html" class="p2">Refrescar</a>
+            <a href="index2.html" class="p2">Refrescar</a>
         </div>
         <div>
-            <img src="img/Home.png" class="añadir">
-            <a href="index2.html" class="p1">Inicio</a>
+            <img src="img\Icon material-delete-forever@2x.png" class="eliminar">
+            <a href="eliminar.html" class="p3">Eliminar</a>
         </div>
         <img src="img/kario sin kairo@2x.png" class="iconK">
         <div>
@@ -32,31 +35,64 @@
             <img src="img\Icon ionic-ios-help-circle@2x.png" class="ayuda">
             <a href="ayudar.html" class="p5">Ayuda</a>
         </div>
-        <div class="menu1">
+        <div id="menu1">
             <img src="img/Icon ionic-ios-settings@2x.png" id="settings">
             <img src="img/Icon material-notifications-active@2x.png" id="notification">
-            <img src="img/pp@2x.png" id="IconPerfil">
+            <label for="checkPerfil">
+                <img src="img/pp@2x.png" id="IconPerfil">
+            </label>
         </div>
     </div>
-    <div class="add">
-        <img src="img\Icon material-delete-forever@2x.png">
-        <p>ELIMINAR</p>
-    </div>
-    <div class="fondo-blanco4">
-        <div class="contenedor2">
-            <p>Selecciona El Área</p>
-            <select name="Areas">
-                <option>Marketing</option>
-                <option>Diseño</option>
-                <option>Developers</option>
-                <option>Gerencia</option>
-                <option>Producción</option>
-            </select>
-            <p>Ingresa El Indicador</p>
-            <input type="text" id=""><br>
-            <button><a href="index2.html">ELIMINAR</a></button>
+    <input type="checkbox" id="checkMenu">
+    <div class="lineaMenu">
+        <div>
+            <img src="img/Group 3@2x.png" class="añadir">
+            <a href="añadir.html" class="p1">Añadir</a>
+        </div>
+        <div>
+            <img src="img\Icon open-reload@2x.png" class="refrescar">
+            <a href="index2.html" class="p2">Refrescar</a>
+        </div>
+        <div>
+            <img src="img\Icon material-delete-forever@2x.png" class="eliminar">
+            <a href="eliminar.html" class="p3">Eliminar</a>
+        </div>
+        <div>
+            <img src="img\Icon material-bug-report@2x.png" class="reportar">
+            <a href="reportar.html" class="p4">Reportar</a>
+        </div>
+        <div>
+            <img src="img\Icon ionic-ios-help-circle@2x.png" class="ayuda">
+            <a href="ayudar.html" class="p5">Ayuda</a>
         </div>
     </div>
+    <input type="checkbox" id="checkPerfil">
+    <div class="menuPerfil">
+        <div class="posicionMenuPerfil">
+            <p class="nombrePerfil">Pedro Felipe Gómez Bonilla</p>
+            <p class="miPerfil">Ir a mi perfil</p>
+            <a href="index.html" class="cerrarSecion">Cerrar Secion</a>
+        </div>
+    </div>    
+        <div class="add">
+            <img src="img\Icon material-delete-forever@2x.png">
+            <p>ELIMINAR</p>
+        </div>
+        <div class="fondo-blanco4">
+            <div class="contenedor2">
+                <p>Selecciona El Área</p>
+                <select name="Areas">
+                    <option>Marketing</option>
+                    <option>Diseño</option>
+                    <option>Developers</option>
+                    <option>Gerencia</option>
+                    <option>Producción</option>
+                </select>
+                <p>Ingresa El Indicador</p>
+                <input type="text" id=""><br>
+                <button><a href="index2.html">ELIMINAR</a></button>
+            </div>
+        </div>
 </body>
 
 </html>
