@@ -294,7 +294,7 @@ button:hover{
     .input2, input{
         width: 11rem;
         height: 1.5rem;
-        justify-content: center;
+        justify-content: center; 
     }
     .titulo{
         width: 7rem;
