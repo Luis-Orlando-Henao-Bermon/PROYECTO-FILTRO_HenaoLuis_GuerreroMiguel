@@ -47,6 +47,9 @@ body{
     padding: 0 2rem;
     display: none;
 }
+.menuHov:hover{
+    border: 1px solid orange;
+}
 .lineaMenu div {
     display: flex;
     width: 9rem;
@@ -85,8 +88,8 @@ body{
     font-size: 1.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #f2f2f2;
-    text-align: end;
+    border-bottom: 1px solid #969595ad;
+    text-align: center;
 }
 .miPerfil {
     margin-bottom: 0.5rem;
@@ -96,7 +99,12 @@ body{
     cursor: pointer;
     transition: 0.2s;
 }
+.miPerfil:hover{
+    transition: 0.2s;
+    color: blue;
+}
 .cerrarSecion:hover{
+    transition: 0.2s;
     color: red;
 }
 
@@ -104,7 +112,7 @@ body{
     display: flex;
 }
 .posicionMenuPerfil{
-    text-align: end;
+    text-align: center;
     background-color: #f2f2f2;
     padding-bottom: 0.5rem;
     border-radius: 1rem;

@@ -123,18 +123,26 @@ body{
     font-size: 1.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 1px solid #969595ad;
     text-align: center;
 }
 .miPerfil {
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
+.menuHov:hover{
+    border: 1px solid orange;
+}
 .cerrarSecion {
     cursor: pointer;
     transition: 0.2s;
 }
+.miPerfil:hover{
+    transition: 0.2s;
+    color: blue;
+}
 .cerrarSecion:hover{
+    transition: 0.2s;
     color: red;
 }
 
