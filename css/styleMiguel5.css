@@ -1,0 +1,358 @@
+body {
+    background-image: url(../img/pexels-pixabay-159400@2x.png);
+    background-size:cover;
+    background-position-x: center;
+    width: 100vw;
+    max-width: 1920px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: MyriadproR;
+    src: url(../font/MYRIADPRO-REGULAR.OTF);
+}
+
+*{
+    font-family: MyriadproR;
+    color: black;
+    text-decoration: none;
+}
+
+/* header (funciones) */
+.linea {
+    background-color: white;
+    border-bottom: 2px solid #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+}
+
+/* modificar el header */
+.linea div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linea a{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.linea img{
+    width: 1.8rem;
+}
+.lineaMenu {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: #f2f2f2;
+    padding: 0 2rem;
+    display: none;
+}
+.lineaMenu div {
+    display: flex;
+    width: 9rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.lineaMenu a{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 6rem;
+}
+.lineaMenu img{
+    width: 1.8rem;
+}
+#checkMenu{
+    display: none;
+}
+#checkMenu:checked ~ .lineaMenu{
+    display: flex;
+}
+.menuPerfil {
+    position: absolute;
+    flex-direction: column;
+    width: 93%;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    display: none;
+}
+
+.nombrePerfil {
+    width: 10rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f2f2f2;
+    text-align: end;
+}
+.miPerfil {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.cerrarSecion {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cerrarSecion:hover{
+    color: red;
+}
+
+#checkPerfil:checked + .menuPerfil{
+    display: flex;
+}
+.posicionMenuPerfil{
+    text-align: end;
+    background-color: #f2f2f2;
+    padding-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+input[type=checkbox]{
+    display: none;
+}
+/* icono */
+#settings {
+    width: 20px;
+}
+/* icono */
+#notification {
+    width: 20px;
+}
+/* icono */
+#IconPerfil {   
+    width: 3.3rem;
+}
+/* menu del perfil */
+#menu1 {
+    gap: 1rem;
+    display: flex;
+    justify-content: end;
+    width: 12%;
+    margin-right: 1%;
+}
+.menuNaranja{
+    display: none;
+}
+/* Titulo del panel */
+.titulo {
+    margin:2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.p1-1 {
+    text-align: center;
+    margin:1rem auto;
+    font-size: 1.5rem;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.add img {
+    width: 45px;
+}
+
+.fondo-blanco {
+    display: flex;
+    width: 30rem;
+    height: 46rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    flex-direction: column;
+    text-align: center;
+    margin: auto auto;
+    border: 2px solid rgba(255, 114, 27, 1);
+}
+
+.fondo-blanco p {
+    font-size: 20px;
+}
+
+input {
+    margin: 0 auto;
+    width: 300px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 114, 27, 1);
+}
+
+.input2{
+    border: none;
+    border: 2px solid rgba(255, 114, 27, 1);
+    
+}
+
+button {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: auto auto;
+    background-color: rgba(255, 114, 27, 1);
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+
+.button-2 {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: auto auto;
+    background-color: rgba(255, 114, 27, 1);
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.button-3:hover {
+    cursor: pointer;
+}
+
+.button-3{
+    color: white;
+    text-decoration: none;
+}
+
+.fondo-blanco2 {
+    display: flex;
+    width: 30rem;
+    height: 28rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    flex-direction: column;
+    text-align: center;
+    margin: auto auto;
+    border: 2px solid rgba(255, 114, 27, 1);
+}
+
+button:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid rgb(192, 87, 2);
+}
+
+.button4{
+    color: white;
+}
+
+.menuNaranja{
+    display: none;
+}
+@media only screen  and (max-width:1500px){
+    .menuPerfil{
+        width: 94%;
+    }
+}
+@media only screen  and (max-width:1250px){
+    .menuPerfil{
+        width: 95%;
+    }
+}
+@media only screen  and (max-width:950px){
+    .menuNaranja{
+        display: flex;
+    }
+    .linea div{
+        display: none;
+    }
+    .linea{
+        justify-content: space-between;
+    }
+    .menuPerfil{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .titulo{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+    }
+    .add{
+        width: 100vw;
+    }
+    .fondo-blanco2{
+        width: 60vw;
+    }
+    .input2, input{
+        width: 50%;
+    }
+    .linea{
+        width: 100vw;
+    }
+    .button-2{
+        width: 20%;
+        height: 6%;
+        font-size: 1.2rem;
+    }
+    .iconK{
+        justify-items: auto;
+    }
+}
+@media only screen and (max-width: 700px){
+    .button-2{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .add{
+        justify-content: center;
+        height: 5rem;
+    }.add img{
+        width: 35px;
+    }
+    .fondo-blanco2{
+        width: 14rem;
+        height: 21rem;
+    }
+    .iconK{
+        justify-items: auto;
+
+    }
+    .input2, input{
+        width: 11rem;
+        height: 1.5rem;
+        justify-content: center; 
+    }
+    .titulo{
+        width: 7rem;
+        font-size: 30px;
+    }
+    .button-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        font-size: 1rem;
+        width: 6rem;
+        height: 1.5rem;
+    }
+    .p1-1,
+    .p2-1,
+    .p3-1{
+        font-size: 1rem;
+    }
+}
