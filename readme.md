@@ -4,7 +4,7 @@ Es un conjunto de páginas web para ver paneles de indicadores, añadir paneles,
 
 ## Estructura del Proyecto
  
-
+![image](https://github.com/user-attachments/assets/30342dc1-dc86-4b75-907a-24efd749e720)
 
 ## Descripción de Archivos y Carpetas
 
