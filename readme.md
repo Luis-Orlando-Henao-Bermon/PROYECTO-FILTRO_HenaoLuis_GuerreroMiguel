@@ -3,6 +3,10 @@
 Es un conjunto de paginas web para ver paneles de indicadores, añadir paneles, eliminar paneles, reportar problemas y una pagina de ayuda 
 
 ## Estructura del Proyecto
+![image](https://github.com/user-attachments/assets/dd0a19e0-998d-4a96-8444-26cbf5031310)
+![image](https://github.com/user-attachments/assets/2cb0619b-bf76-4a9e-a807-eb3e8373440d)
+![image](https://github.com/user-attachments/assets/2966ab7f-796d-4c63-9064-5b807b07a497)
+![image](https://github.com/user-attachments/assets/bd798576-53f7-4d31-bf35-6c1803eff8a2)
 
 
 ## Descripción de Archivos y Carpetas
