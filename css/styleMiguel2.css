@@ -82,7 +82,7 @@ body {
 .menuPerfil {
     position: absolute;
     flex-direction: column;
-    width: 93%;
+    width: 97%;
     display: flex;
     align-items: end;
     display: none;
@@ -118,6 +118,7 @@ body {
 .posicionMenuPerfil{
     text-align: center;
     background-color: #f2f2f2;
+    padding: 0 2vw;
     padding-bottom: 0.5rem;
     border-radius: 1rem;
 }
@@ -268,12 +269,7 @@ button:hover{
 }
 @media only screen  and (max-width:1500px){
     .menuPerfil{
-        width: 94%;
-    }
-}
-@media only screen  and (max-width:1250px){
-    .menuPerfil{
-        width: 95%;
+        width: 100%;
     }
 }
 @media only screen  and (max-width:950px){

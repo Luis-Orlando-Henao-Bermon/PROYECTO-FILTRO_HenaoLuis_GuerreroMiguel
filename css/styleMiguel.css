@@ -153,6 +153,7 @@ body{
     text-align: center;
     background-color: #f2f2f2;
     padding-bottom: 0.5rem;
+    padding: 0 2vw;
 }
 @keyframes bienvenidoB {
     5%{
@@ -547,6 +548,11 @@ input[type=radio],input[type=checkbox]{
 #selecPanel6:checked + .panelMenu{
     display: flex;
 }
+@media only screen  and (max-width:1500px){
+    .menuPerfil{
+        width: 100%;
+    }
+}
 @media only screen  and (max-width:1200px){
     .indicadores p{
         font-size: 1rem;
@@ -563,9 +569,7 @@ input[type=radio],input[type=checkbox]{
     .p1-1 {
         font-size: 1.2rem;
     }
-    .menuPerfil{
-        width: 98%;
-    }
+    
 }
 @media only screen  and (max-width:950px){
     .menuNaranja{
