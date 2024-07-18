@@ -27,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* Imagen de splash Screen */
 .Kario {
     width: 10vw;
     animation-name: kar;
@@ -53,6 +54,7 @@ body{
         opacity: 0;
     }
 } 
+/* Login */
 .login{
     background-color: white;
     max-width: 55.5rem;
@@ -92,6 +94,7 @@ body{
     margin-bottom: 1.4rem;
     text-align: center;
 }
+/* Formuario */
 .formulario {
     width: 40.6rem;
 }
