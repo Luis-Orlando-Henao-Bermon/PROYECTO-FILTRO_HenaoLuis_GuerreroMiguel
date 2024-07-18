@@ -8,7 +8,7 @@ body {
     padding: 0;
     margin: 0;
 }
-
+/* fuente de la letra en la pagina */
 @font-face {
     font-family: MyriadproR;
     src: url(../font/MYRIADPRO-REGULAR.OTF);
@@ -36,14 +36,17 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+/* hipervinculos en el header */
 .linea a{
     margin: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
+/* imagenes en el header */
 .linea img{
     width: 1.8rem;
 }
+/* menu Responsive */
 .lineaMenu {
     flex-direction: column;
     justify-content: space-evenly;
@@ -53,15 +56,18 @@ body {
     padding: 0 2rem;
     display: none;
 }
+/* animacion del cursor en el menu responsive */
 .menuHov:hover{
     border: 1px solid orange;
 }
+/* controla las divisiones de forma general en la parte del menu responsive */
 .lineaMenu div {
     display: flex;
     width: 9rem;
     align-items: center;
     justify-content: space-between;
 }
+/* controla los hipervinculos en el menu responsive */
 .lineaMenu a{
     margin: 0.5rem;
     font-size: 1.2rem;
@@ -69,15 +75,19 @@ body {
     text-align: center;
     width: 6rem;
 }
+/* controla las imagenes en el menu responsive */
 .lineaMenu img{
     width: 1.8rem;
 }
+/* cuando no hay interaccion en el menu */
 #checkMenu{
     display: none;
 }
+/* cuando hay interaccion con el menu resposive */
 #checkMenu:checked ~ .lineaMenu{
     display: flex;
 }
+/* controla el menu del perfil */
 .menuPerfil {
     position: absolute;
     flex-direction: column;
@@ -86,6 +96,7 @@ body {
     align-items: end;
     display: none;
 }
+/* nombre del usuario en el menu del perfil */
 .nombrePerfil {
     width: 10rem;
     font-size: 1.5rem;
@@ -94,26 +105,31 @@ body {
     border-bottom: 1px solid #969595ad;
     text-align: center;
 }
+/* hipervinculo de "ir a mi perfil" */
 .miPerfil {
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
-.miPerfil:hover{
-    transition: 0.2s;
-    color: blue;
-}
+/* hipervinculo de "cerrar sesion" */
 .cerrarSecion {
     cursor: pointer;
     transition: 0.2s;
 }
+/* animacion del hipervinculo de "ir a mi perfil" */
+.miPerfil:hover{
+    transition: 0.2s;
+    color: blue;
+}
+/* animacion del hipervinculo de "cerrar sesion" */
 .cerrarSecion:hover{
     transition: 0.2s;
     color: red;
 }
-
+/* controla el menu del perfil */
 #checkPerfil:checked + .menuPerfil{
     display: flex;
 }
+/* ubicacion del menu del perfil */
 .posicionMenuPerfil{
     text-align: center;
     background-color: #f2f2f2;
@@ -121,6 +137,7 @@ body {
     border-radius: 1rem;
     padding: 0 2vw;
 }
+/* controla la interaccion del input */
 input[type=checkbox]{
     display: none;
 }
@@ -144,6 +161,7 @@ input[type=checkbox]{
     width: 12%;
     margin-right: 1%;
 }
+/* animacion del mouse en el menu responsive */
 .menuNaranja{
     display: none;
 }
@@ -154,23 +172,23 @@ input[type=checkbox]{
     font-size: 2.5rem;
     font-weight: 600;
 }
-
+/* controla la division donde se encuentran la imagen y el titulo */
 .add {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/* control la fuente del titulo */
 .add p{
     font-size: 20px;
     width: 5rem;
 }
-
+/* controla la medida en la imagen */
 .add img {
     width: 35px;
     justify-content: space-between;
 }
-
+/* controla la division de fondo donde se encuentran los pasos necesarios para añadir */
 .fondo-blanco {
     display: flex;
     width: 30rem;
@@ -182,11 +200,11 @@ input[type=checkbox]{
     margin: auto auto;
     border: 2px solid rgba(255, 114, 27, 1);
 }
-
+/* controla el tamaño del texto en la division de fondo donde se encuentran los pasos para añadir */
 .fondo-blanco p {
     font-size: 20px;
 }
-
+/* controla los cuadros de texto que donde ingresar el usuario */
 input {
     margin: 0 auto;
     width: 300px;
@@ -194,12 +212,12 @@ input {
     border-radius: 25px;
     border: 2px solid rgba(255, 114, 27, 1);
 }
-
+/* controla los cuadros de texto que donde ingresar el usuario */
 .input2{
     border: none;
     border: 2px solid rgba(255, 114, 27, 1);
 }
-
+/* controla el estilo del boton de añadir */
 button {
     display: flex;
     width: 150px;
@@ -212,20 +230,21 @@ button {
     font-size: 20px;
     border-radius: 50px;
 }
-
+/* controla cuando se pasa por encima el mouse en el boton */
 button:hover{
     cursor: pointer;
     transition: 0.2s;
     border: 2px solid rgb(192, 87, 2);
 }
-
+/* controla el color del texto en el boton*/
 .button4{
     color: white;
 }
-
+/* controla la visualizacion del menu responsive */
 .menuNaranja{
     display: none;
 }
+/* responsive para pantallas de 1500 pixeles */
 @media only screen  and (max-width:1500px){
     .button4{
         display: flex;
@@ -240,6 +259,7 @@ button:hover{
         width: 100%;
     }
 }
+/* responsive para pantallas de 1250 pixeles */
 @media only screen  and (max-width:1250px){
     .button4{
         display: flex;
@@ -251,6 +271,7 @@ button:hover{
         height: 1.5rem;
     }
 }
+/* responsive para pantallas de 950 pixeles */
 @media only screen  and (max-width:950px){
     .menuNaranja{
         display: flex;
@@ -274,6 +295,7 @@ button:hover{
         height: 1.5rem;
     }
 }
+/* responsive para pantallas de 800 pixeles */
 @media only screen and (max-width: 800px) {
     .titulo{
         display: flex;
@@ -305,6 +327,7 @@ button:hover{
         justify-items: auto;
     }
 }
+/* responsive para pantallas de 700 pixeles */
 @media only screen and (max-width: 700px){
     .button4{
         display: flex;
@@ -316,6 +339,7 @@ button:hover{
         height: 1.5rem;
     }
 }
+/* responsive para pantallas de 500 pixeles */
 @media only screen and (max-width: 500px){
     .add{
         justify-content: center;

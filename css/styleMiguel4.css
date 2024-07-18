@@ -11,7 +11,7 @@ body {
     padding: 0;
     margin: 0;
 }
-
+/* tipo de fuente en la pagina */
 @font-face {
     font-family: MyriadproR;
     src: url(../font/MYRIADPRO-REGULAR.OTF);
@@ -40,14 +40,17 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+/* texto en los hipervinculos del header */
 .linea a{
     margin: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
+/* imagenes al lado de los hipervinculos */
 .linea img{
     width: 1.8rem;
 }
+/* cotrola el menu responsive */
 .lineaMenu {
     flex-direction: column;
     justify-content: space-evenly;
@@ -58,12 +61,14 @@ body {
     margin-top: 4rem;
     display: none;
 }
+/* controla las divisiones en el menu responsive */
 .lineaMenu div {
     display: flex;
     width: 9rem;
     align-items: center;
     justify-content: space-between;
 }
+/* controla el texto que redirecciona en el menu responsive */
 .lineaMenu a{
     margin: 0.5rem;
     font-size: 1.2rem;
@@ -71,19 +76,24 @@ body {
     text-align: center;
     width: 6rem;
 }
+/* imagenes del menu responsive */
 .lineaMenu img{
     width: 1.8rem;
     display: no;
 }
+/* animacion del cursor en el menu responsive */
 .menuHov:hover{
     border: 1px solid orange;
 }
+/* menu del perfil cuando no es clickeado */
 #checkMenu{
     display: none;
 }
+/* menu del perfil cuando es clickeado */
 #checkMenu:checked ~ .lineaMenu{
     display: flex;
 }
+/* menu del perfil */
 .menuPerfil {
     position: absolute;
     flex-direction: column;
@@ -94,7 +104,7 @@ body {
     display: none;
     margin-top: 4rem;
 }
-
+/* nombre del usuario en el perfil */
 .nombrePerfil {
     width: 10rem;
     font-size: 1.5rem;
@@ -103,26 +113,31 @@ body {
     border-bottom: 1px solid #969595ad;
     text-align: center;
 }
+/* ubicacion en el nombre del usuario en el perfil */
 .miPerfil {
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
+/* ubicacion de cerrar sesion en el menu del perfil */
 .cerrarSecion {
+    margin-bottom: 0.5rem;
     cursor: pointer;
-    transition: 0.2s;
 }
+/* animacion del menu del perfil en ir a mi perfil */
 .miPerfil:hover{
     transition: 0.2s;
     color: blue;
 }
+/* animacion del menu del perfil en ir a cerrar sesion */
 .cerrarSecion:hover{
     transition: 0.2s;
     color: red;
 }
-
+/* controla cuando clickean el menu del perfil */
 #checkPerfil:checked + .menuPerfil{
     display: flex;
 }
+/* ubicaion del menu del perfil */
 .posicionMenuPerfil{
     text-align: center;
     background-color: #f2f2f2;
@@ -130,6 +145,7 @@ body {
     border-radius: 1rem;
     padding: 0 2vw;
 }
+/* controla la interaccion del input */
 input[type=checkbox]{
     display: none;
 }
@@ -153,25 +169,26 @@ input[type=checkbox]{
     width: 12%;
     margin-right: 1%;
 }
+/* evita que aparezca el menu respnsive antes de los pixeles establecidos par qe aparezca */
 .menuNaranja{
     display: none;
 }
-
+/* controla la division donde se encuentran la imagen y el titulo */
 .add {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
-
+/* control la fuente del titulo */
 .add p {
     font-size: 30px;
 }
-
+/* controla la medida en la imagen */
 .add img {
     width: 25px;
 }
-
+/* controla la division de fondo donde se encuentran los pasos necesarios para hacer la eliminacion */
 .fondo-blanco4{
     background-color: white;
     border: 2px solid rgba(255, 114, 27, 1);
@@ -185,7 +202,7 @@ input[type=checkbox]{
     margin: 0 auto;
     font-size: 25px;
 }
-
+/* controla los cuadros de texto que donde ingresar el usuario */
 input{
     display: flex;
     margin: 0 auto;
@@ -194,14 +211,12 @@ input{
     width: 20rem;
     height: 3rem;
 }
-
-
-
+/* controla donde se ubica el cuadro de seleccion en el area */
 .contenedor2{
     margin: 0 auto;
     justify-content: center;
 }
-
+/* controla el estilo de las opciones en el cuadro de area */
 select{
     width: 20rem;
     height: 3rem;
@@ -209,6 +224,7 @@ select{
     border-radius: 50px;
     border: 2px solid rgba(255, 114, 27, 1);
 }
+/* controla el estilo del boton de eliminar */
 button{
     margin: auto;
     margin-top: 2.4rem;
@@ -218,23 +234,25 @@ button{
     height: 4rem;
     background-color: rgba(255, 114, 27, 1);
 }
-
+/* controla el texto dentro del boton */
 button a{
     text-align: center;
     color: white;
     font-size: 26px;
 }
-
+/* controla cuando se pasa por encima el mouse en el boton */
 button:hover{
     cursor: pointer;
     transition: 0.2s;
     border: 2px solid rgb(192, 87, 2);
 }
+/* responsive para pantallas de 1500 pixeles */
 @media only screen  and (max-width:1500px){
     .menuPerfil{
         width: 100%;
     }
 }
+/* responsive para pantallas de 950 pixeles */
 @media only screen  and (max-width:950px){
     .menuNaranja{
         display: flex;
@@ -249,12 +267,13 @@ button:hover{
         width: 100%;
     }
 }
-
+/* responsive para pantallas de 570 pixeles */
 @media only screen  and (max-width:570px){
     .fondo-blanco4{
         width: 95vw;
     }
 }
+/* responsive para pantallas de 440 pixeles */
 @media only screen  and (max-width:440px){
     .fondo-blanco4{
         height: 25rem;
