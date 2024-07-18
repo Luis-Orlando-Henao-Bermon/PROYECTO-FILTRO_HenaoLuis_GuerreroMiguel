@@ -1,59 +1,50 @@
-# Proyecto PROYECTO-FILTRO_HenaoLuis_GuerreroMiguel
+# PROYECTO-FILTRO_HenaoLuis_GuerreroMiguel
 
-Es un conjunto de paginas web para ver paneles de indicadores, añadir paneles, eliminar paneles, reportar problemas y una pagina de ayuda 
+Es un conjunto de páginas web para ver paneles de indicadores, añadir paneles, eliminar paneles, reportar problemas y una página de ayuda 
 
 ## Estructura del Proyecto
-![image](https://github.com/user-attachments/assets/dd0a19e0-998d-4a96-8444-26cbf5031310)
-![image](https://github.com/user-attachments/assets/2cb0619b-bf76-4a9e-a807-eb3e8373440d)
-![image](https://github.com/user-attachments/assets/2966ab7f-796d-4c63-9064-5b807b07a497)
-![image](https://github.com/user-attachments/assets/bd798576-53f7-4d31-bf35-6c1803eff8a2)
+
 
 
 ## Descripción de Archivos y Carpetas
 
-
 ### Carpeta `img`
 
-Contiene todas las imagenes usadas en este proyecto
+Contiene todas las imágenes usadas en este proyecto
 
 ### Carpeta `font`
-Contine todas las tipografias que fueron usadas en este proyecto
+Contiene todas las tipografías que fueron usadas en este proyecto
 
-### Archivo `index.html`
+### Archivos `index.html`, `style.css`
+Estos son los archivos usados para la página del login en la cual se hace un splash screen con el logo de la empresa y posteriormente se piden los datos necesarios para el login 
 
-En este archivo se encuentra la pagina del login donde se pueden ingresar los datos y despues redireccionara a index2.html  en este archivo se encuentran las siguientes secciones:
+### Archivos `index2.html`, `styleMiguel.css`
 
-#### Imagen de splash Screen
+- Archivos usados para él la página principal de paneles de indicadores, en esta página hay un splash screen con la bienvenida y el logo de la página, en el menú de paneles se puede ir a las diferentes funciones como: añadir, eliminar, reportar y ayuda. Se pueden ver los paneles y al lado su menú desplegable en el cual se pueden ver los datos de una mejor forma y en caso de que estés en dispositivo móvil se mostraran todos los datos, ya que por defecto no se ven, al dar clic en la imagen de perfil se desplegara un menú para poder cerrar sesión
 
-Esta es la imagen que se muestra en el splash screen sando keyframes para dar ese efecto
+### Archivos `añadir.html`, `styleMiguel5.css`
 
-#### Login
+- Archivos usados para la pagina de añadir. Contiene un heder a través del cual se puede desplazar entre las diferentes funciones del proyecto, en dicha pagina se solicitan ingresar los datos necesarios para crear un nuevo panel
 
-Esta es la seccion donde se encuentra la informacion de login y todo loq ue necesita saber 
+### Archivos `ayudar.html`, `styleMiguel3.css`
 
-#### Formuario
+- Archivos usados para la pagina de Ayuda. Contiene un heder a través del cual se puede desplazar entre las diferentes funciones del proyecto, en dicha pagina se dan las indicaciones de como se pueden usar las diferentes funciones del proyecto y en caso de necesitar algo diferente están los diferentes tipos de contactos que hay 
 
-En esta parte estan todos los imputs y labela sus respectivos inputs
+### Archivos `eliminar.html`, `styleMiguel4.css`
 
+- Archivos usados para la pagina de eliminar. Contiene un heder a través del cual se puede desplazar entre las diferentes funciones del proyecto, en dicha pagina deveras de seleccionar el área y escribir el indicador del panel que se desea eliminar
 
-### Archivo `style.css`
+### Archivos `reportar.html`, `styleMiguel2.css`
 
-Este archivo es el que le da los estilos a la pagina index.html 
-
-#### Imagen splash screen 
-
-en esta imagen se uso opacidad para los keyframes para dar el efecto de desaparecer y volver a aparecer en el splash screen
-
-#### Login
-para el login se uso un posision absoluta para quedar superpuesto a la imagen de splash screen y se uso opacidad para los keyframens
+- Archivos usados para la pagina de Reporte. Contiene un heder a través del cual se puede desplazar entre las diferentes funciones del proyecto, en dicha pagina se pregunta que desea reportar, se pide una pequeña descripción del problema y una imagen de evidencia en caso de tenerla 
 
 ## Instalación y Uso
 
 Para ello debes clonar el directorio del siguiente link de git hub https://github.com/Luis-Orlando-Henao-Bermon/PROYECTO-FILTRO_HenaoLuis_GuerreroMiguel
 
-Abre la terminal de git y alli escribe el siguente comando: git clone https://github.com/Luis-Orlando-Henao-Bermon/PROYECTO-FILTRO_HenaoLuis_GuerreroMiguel
+Abre la terminal de git y allí escribe el siguiente comando: git clone https://github.com/Luis-Orlando-Henao-Bermon/PROYECTO-FILTRO_HenaoLuis_GuerreroMiguel
 
 ## Créditos
 
-Desarrollado por Luis Orlando Henao Bermon 1093904929, Miguel Andres Guerrero Martinez
+Desarrollado por Luis Orlando Henao Bermon C.C 1093904929, Miguel Andrés Guerrero Martínez C.C 1090381839
 
