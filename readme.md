@@ -3,7 +3,7 @@
 Es un conjunto de páginas web para ver paneles de indicadores, añadir paneles, eliminar paneles, reportar problemas y una página de ayuda 
 
 ## Estructura del Proyecto
-
+ 
 
 
 ## Descripción de Archivos y Carpetas
