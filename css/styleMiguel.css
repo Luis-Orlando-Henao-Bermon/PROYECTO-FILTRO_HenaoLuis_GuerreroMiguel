@@ -17,6 +17,7 @@ body{
     overflow-x: hidden;
     animation: bod 6s;
 }
+/* Bienvenida al usuario */
 .pagina{
     margin: 0%;
     display: flex;
@@ -78,11 +79,7 @@ body{
     font-size: 1.25rem;
     font-family: myriadProLight;
 }
-.KarioB{
-    width: 10vw;
-    opacity: 0;
-    animation: karB 6s;
-}
+/* MENU PRINCIPAL */
 .pagPrincipal {
     position: absolute;
     width: 100%;
@@ -93,21 +90,89 @@ body{
     margin: 0%;
     animation: pagP 6s;
 }
+.linea {
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+}
+.linea div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linea a{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.linea img{
+    width: 1.8rem;
+}
+.menuNaranja{
+    display: none;
+}
+#menu1 {
+    gap: 1rem;
+    display: flex;
+    justify-content: end;
+    width: 12%;
+    margin-right: 1%;
+}
+#settings {
+    width: 20px;
+}
+#notification {
+    width: 20px;
+}
+#IconPerfil {   
+    width: 3.3rem;
+}
+/* Menu Responsive */
 
-.button5{
-    background-color: #FF721B;
-    color: #f2f2f2;
-    border: none;
-    width: 10rem;
-    height: 2rem;
-    border-radius: 50px;
+#checkMenu{
+    display: none;
+}
+#checkMenu:checked ~ .lineaMenu{
+    display: flex;
 }
 
-.button5:hover{
-    cursor: pointer;
-    border: 2px solid #b44500;
+.lineaMenu {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: #f2f2f2;
+    padding: 0 2rem;
+    margin-top: -3px;
+    display: none;
 }
-/* menu de perfil */
+.lineaMenu div {
+    display: flex;
+    width: 9rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.lineaMenu a{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 6rem;
+}
+.lineaMenu img{
+    width: 1.8rem;
+    display: no;
+}
+.menuHov:hover{
+    border: 1px solid orange;
+}
+
+/* Menu del Perfil */
+#checkPerfil:checked + .menuPerfil{
+    display: flex;
+}
 .menuPerfil {
     position: absolute;
     flex-direction: column;
@@ -116,6 +181,12 @@ body{
     align-items: end;
     text-align: center;
     display: none;
+}
+.posicionMenuPerfil{
+    text-align: center;
+    background-color: #f2f2f2;
+    padding-bottom: 0.5rem;
+    padding: 0 2vw;
 }
 
 .nombrePerfil {
@@ -130,31 +201,59 @@ body{
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
-.menuHov:hover{
-    border: 1px solid orange;
+.miPerfil:hover{
+    transition: 0.2s;
+    color: blue;
 }
 .cerrarSecion {
     cursor: pointer;
     transition: 0.2s;
 }
-.miPerfil:hover{
-    transition: 0.2s;
-    color: blue;
-}
 .cerrarSecion:hover{
     transition: 0.2s;
     color: red;
 }
-
-#checkPerfil:checked + .menuPerfil{
-    display: flex;
-}
-.posicionMenuPerfil{
+/* Titulo */
+.titulo {
+    margin:2rem auto;
     text-align: center;
-    background-color: #f2f2f2;
-    padding-bottom: 0.5rem;
-    padding: 0 2vw;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
+.p1-1 {
+    text-align: center;
+    margin:1rem auto;
+    font-size: 1.5rem;
+}
+/* FUNCIONES */
+.indicadores{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: 0 0.5rem;
+    padding-left: 2rem;
+}
+.indicadores p{
+    width: 11%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#p2-1{
+    text-align: start;
+    width: 14%;
+}
+#p2-2{
+    width: 14%;
+    text-align: start;
+}
+#p2-5{
+    width: 14%;
+} 
+#p2-6{
+    padding-right: 1%;
+}
+
 @keyframes bienvenidoB {
     5%{
         opacity: 1;
@@ -210,127 +309,11 @@ body{
         opacity: 0;
     }
 } 
-
-/* header (funciones) */
-.linea {
-    border-bottom: 2px solid gray;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 4rem;
-}
-.linea div {
+.paneles{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin: 0 0.5%;
 }
-.linea a{
-    margin: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.linea img{
-    width: 1.8rem;
-}
-.lineaMenu {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    background-color: #f2f2f2;
-    padding: 0 2rem;
-    margin-top: -3px;
-    display: none;
-}
-.lineaMenu div {
-    display: flex;
-    width: 9rem;
-    align-items: center;
-    justify-content: space-between;
-}
-.lineaMenu a{
-    margin: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    width: 6rem;
-}
-.lineaMenu img{
-    width: 1.8rem;
-    display: no;
-}
-#checkMenu{
-    display: none;
-}
-#checkMenu:checked ~ .lineaMenu{
-    display: flex;
-}
-/* icono */
-#settings {
-    width: 20px;
-}
-/* icono */
-#notification {
-    width: 20px;
-}
-/* icono */
-#IconPerfil {   
-    width: 3.3rem;
-}
-/* menu del perfil */
-#menu1 {
-    gap: 1rem;
-    display: flex;
-    justify-content: end;
-    width: 12%;
-    margin-right: 1%;
-}
-.menuNaranja{
-    display: none;
-}
-
-/* Titulo del panel */
-.titulo {
-    margin:2rem auto;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-.p1-1 {
-    text-align: center;
-    margin:1rem auto;
-    font-size: 1.5rem;
-}
-
-/* Boton */
-.indicadores{
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    padding: 0 0.5rem;
-    padding-left: 2rem;
-}
-.indicadores p{
-    width: 11%;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-#p2-5{
-    width: 14%;
-} 
-#p2-2{
-    width: 14%;
-    text-align: start;
-}
-#p2-6{
-    padding-right: 1%;
-}
-#p2-1{
-    text-align: start;
-    width: 14%;
-}
-/* LINEA DESCRIPTIVA 1 */
 .Datos1 {
     border: 2px solid gray;
     width: 92%;
@@ -369,31 +352,6 @@ body{
 #circulo_orange{
     stroke: #ff9c04;
 }
-.paneles{
-    display: flex;
-    align-items: center;
-    margin: 0 0.5%;
-}
-#menuP{
-    width: 2rem;
-    object-fit: contain;
-}
-.labelP{
-    width: 2rem;
-    height: 2rem;
-    margin-left: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-.porcentaje{
-    width: 11%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #Indicador {
     width: 14%;
     text-align: start;
@@ -404,36 +362,27 @@ body{
     text-align: start;
     justify-content: start;
 }
-/* BOTON ANTES DE INTERACCION */
-.final{
-    display: flex;
-    justify-content: center;
-}
-button{
-    background-color: #FF721B;
-    border: none;
-    width: 20rem;
-    height: 4rem;
-    font-size: 1.5rem;
-    border-radius: 2rem;
-    cursor: pointer;
-    margin: 2rem auto;
+.porcentaje{
+    width: 11%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.button3{
-    color: white;
-}
-
-button:hover{
+.labelP{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    transition: 0.2s;
-    border: 2px solid rgb(192, 87, 2);
 }
 
-
+#menuP{
+    width: 2rem;
+    object-fit: contain;
+}
 .panelMenu{
     display: flex;
     justify-content: center;
@@ -546,6 +495,32 @@ input[type=radio],input[type=checkbox]{
 #selecPanel6:checked + .panelMenu{
     display: flex;
 }
+/* BOTON FINAL */
+.final{
+    display: flex;
+    justify-content: center;
+}
+.button5{
+    background-color: #FF721B;
+    color: #f2f2f2;
+    border: none;
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button5:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid #b44500;
+}
+
 @media only screen  and (max-width:1500px){
     .menuPerfil{
         width: 100%;
